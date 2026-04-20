@@ -18,6 +18,9 @@ POLL_INTERVAL = 0.75
 # Minimum seconds between two AI calls (cooldown)
 ANSWER_COOLDOWN = 4.0
 
+# Seconds the screen must remain completely static before triggering OCR
+STABILITY_DELAY = 0.5
+
 # ─────────────────────────────────────────────
 #  CHANGE DETECTION
 # ─────────────────────────────────────────────
@@ -112,3 +115,4 @@ LOG_FILE     = os.path.join(LOG_DIR,     "study_assistant.log")
 HOTKEY_TOGGLE = "ctrl+alt+s"   # Start / Stop monitoring
 HOTKEY_EXIT   = "ctrl+q"       # Quit application
 HOTKEY_HIDE   = "ctrl+alt+h"   # Hide / Show overlay
+HOTKEY_REGION = "ctrl+alt+r"   # Draw a custom capture region

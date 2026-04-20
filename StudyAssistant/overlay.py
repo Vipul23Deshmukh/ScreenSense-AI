@@ -22,8 +22,15 @@ class StudyOverlay:
         
         self.root.configure(bg=self.bg_color)
         
-        # Set Position and Size from config
-        x, y = OVERLAY_POSITION
+        # Calculate Position (Bottom-Right Corner)
+        self.root.update_idletasks() # Ensure accurate screen dimensions
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        
+        # 20px padding from the right, 60px padding from the bottom (taskbar clearance)
+        x = screen_width - OVERLAY_WIDTH - 20
+        y = screen_height - OVERLAY_HEIGHT - 60
+        
         self.root.geometry(f"{OVERLAY_WIDTH}x{OVERLAY_HEIGHT}+{x}+{y}")
         
         # Dragging State

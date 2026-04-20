@@ -1,0 +1,49 @@
+[
+  {
+    "question": "A fe Edit Selecnon View Go Run Termin! Help StudyAsustent Antgtaety Implementaban an, Opn Agr Mauer 8 DBO SP @o @v fa Q Explorer Implementation Plan X -@ uk py M 92 Walt oy @ manpy @ answer ong DC > Optimizing Study Assistant Performance: +3 x a, © StudyAsssuant Implementation Plan Vt riretes 2% So Renew © a > pytache . Continue . > logs ° answer engi M Performance Optimization Implementation Plan 5 48 app ys Tjust checked the apphcation logs, and Lean se exactly what's happening. The e @ capture py The. plan outlines the steps to optimize the Al Study Assistant application by reducing unnecessary work running apphcation 6s detecting the seteen changes and running the OCR (text reading), but a @ change detector py Network tasks asynchronously, and caching results IWS fejecting the text because it cannot find at least two valid multiple-choice e ® ccnligpy ) options ie @ find tegion py User Review Required In the logs, it says [WARNING] Met enough options found (Found 8, Required 7) @ get answer py . Ignoring. oo sadeg tt Please tewew the proposed approach for Region- Based Capture Currently, the app captures the full screen if ete kwh thes happens and how to tacit eninediateby Pan ‘ CAPTURE REGION IS None IN config. py propose keeping find ergion. py as the way for users to find coordinates, Ive per clean py - - 6 iy Bet Lvall emphasize its use in the documentation and ensure the capture module effiaently respects the region, Is this 1. The Screen Capture is Too Broad (Too Much Noise} main e ” sufficient, of would you like an automatic GUL based region selector built into the app? Right now, the app is capturing your entice screen Tesseract OCR ix trying to read per gy 6 y your taskbar, background apps, and website menus, ceulting in 4 lot af “garbage” ovetlay py i tert that conhases the question parser 7 Open Questions © parser oy The Foc You need to tell the app exactly where the questian 6 = README md @ requirements tat © for the cache. gn in memory dictonary suffigent, of do you want it perusted to disk actoss application restarts? 1, Run the region finder script in your terminal python find region. py LY style ss (Dwall assume in memory for now to poontize speed) 2. Follow the prompt to move your mouse to the tap belt and bottom nght of the se TESSERACT SETUP question box",
+    "options": [
+      "3) IU well output coordinates fike (188, 780, 988, 408) @ test apy Proposed Changes",
+      "4) Open contig.py and change CAPTURE REGION - Hone To CAPTURE REGION - @ test amwer engin @ test capture py contin. py (188, 280, 88, 498) (uang your coordinates) @ west change dewe . 5, Restart the application ( python auin. py e ' Add new configuration parameters for the optimizations, test lve oct py",
+      "2) The tion Format @ test ocr input pag [MODIFY] config py Quest @ test ocr process, The apphe ation is strictly looking for standard multiple chose formats, Ensure the A tect pony © Add sTABILITY DELAY 1.8: Seconds the screen must remain completely static before tagqgering OCR (to prevent question you ate looking at has options that start ons new fine and look bike ane of © bo you want to install the recommended Python’ eatension = @X O Files With hanges Renew Change. trem ms python for the Python Language? . . See vet | | Show Recommendations ode call and debounce OCR calls, + Gem Lt Pra tigh) © 7 Pun $ Me So Oho Antopaaty settings (2 26rC g ¥ ¢ ENG oo4a SX |: Zz s@° meABGéE OA aw FP os 4 2025 F"
+    ],
+    "answer": {
+      "letter": "3"
+    },
+    "timestamp": "2026-04-21T00:44:52.974447"
+  },
+  {
+    "question": "BB StudyAssistant x + . € 7 Assistant a FC Wincows\\System32umde x tov - a x © N Microsoft Windows [Version 16,0.26200.82u6] EE Oetaas",
+    "options": [
+      "C) Microsoft Corporation, All rights reserved,",
+      "E) \\ScreenSense-Al\\StudyAssistant>python find_region. py & Move mouse to TOP-LEFT corner of the question... > bene > New Volume tf B wa. PO IMEI TSS Scutee Bale KE > Everts BB tesseaact setup 716 890 Matktcet Soot 7Ke > New Votume (¢ Best gy PIS eas Peter file 1Ke Mates as 26rc o ¥ > ENG 0046 SF | @ Search ma FPO MBCE PCO A an FP oo 2000"
+    ],
+    "answer": {
+      "letter": "E"
+    },
+    "timestamp": "2026-04-21T00:46:16.083264"
+  },
+  {
+    "question": "too eatante feedaet XP Serple terest Apt tuce 2 x B® assy Anciet eoid x GS Sttyall Smet Stat tees A Problems on Tram Aptnd: xX + € Ask Gemini: < x vo —_ CrWindows\\System32\\emde x. toe - a x ce Microsoft Windows [Version 16.6. 26200.8246]",
+    "options": [
+      "C) Microsoft Corporation, All rights reserved.",
+      "E) \\ScreenSense-Al\\StudyAssistant>python find_region. py Move mouse to TOP-LEFT corner of the question... Top-left; 147, 256 Now move mouse to BOTTON-RIGHT of the answer options... Bottom-right: 668, 443 @ Your REGION is: (147, 256, 521, 187)",
+      "E) \\ScreenSense-Al\\StudyAssistant> [o] nec © “ORES 00m © Current Attairs 8 225-n @ General Knowledge c 245m Oo 250 r . 26\"C Py . : . RY - ING cob a P Fiad we O Search ~~». EOmasvs g — 7 > aw FP aca cox,"
+    ],
+    "answer": {
+      "letter": "E"
+    },
+    "timestamp": "2026-04-21T00:46:38.650154"
+  },
+  {
+    "question": "too eatante feedaet x F Serple terest Apt tuce 2 x B® assy Anciet eoid GS Styl Smet Set vas A Problems on Traum. Apttd: xX + € Ask Gemini: CooL e TR ov: CWindows\\System3zicemde Xt Microsoft Windows [Version 16.6. 26200.8246]",
+    "options": [
+      "C) Microsoft Corporation, All rights reserved.",
+      "E) \\ScreenSense-Al\\StudyAssistant>python find_region. py Move mouse to TOP-LEFT corner of the question... Top-left: 1U7, 256 Now move mouse to BOTTON-RIGHT of the answer options... PR Gotton-right: 668, 4u3 @ Your REGION is: (147, 256, 521, 187)",
+      "E) \\ScreenSense-Al\\StudyAssistant>python main, py (60:46:46) INFO change_detector - ChangeDetector initialised (threshold=0.04, diff_thresh=2S, min_area=200) 2026-G4-21 00:46:46,389 [INFO] ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200) tJ 2926-04-21 00:46:46,714 [INFO] Hotkeys registered: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+altth) 2026-GU-21 00:46:46,715 [INFO] Starting background screen monitoring loop... e 2026-G4-21 06:46:46,715 [INFO] AI Study Assistant is initialized and listening! ABC O os © Sniine Tests “‘K 200m © Current Attairs 8 225m @ General Knowledge c 245m Oo 250 r . 26°C Py . : . RY - ING re P Fiad we O Search ~~». EOmasvs g vy > aw FP aca cox,"
+    ],
+    "answer": {
+      "letter": "C"
+    },
+    "timestamp": "2026-04-21T00:46:48.941356"
+  }
+]

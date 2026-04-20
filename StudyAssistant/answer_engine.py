@@ -90,11 +90,12 @@ def solve_with_openai(question: str, options: List[str]) -> str:
         logger.error(f"OpenAI API error: {e}. Falling back to mock.")
         return solve_with_mock(question, options)
 
-def get_answer(question: str, options: List[str]) -> str:
-    """
-    Main entry point for the answer engine.
-    Routes to the appropriate plugin based on config.
-    """
+from functools import lru_cache
+
+@lru_cache(maxsize=100)
+def _cached_get_answer(question: str, options_tuple: tuple) -> str:
+    """Cached inner function for get_answer."""
+    options = list(options_tuple)
     plugin = AI_PLUGIN.lower()
     
     if plugin == "openai":
@@ -106,3 +107,11 @@ def get_answer(question: str, options: List[str]) -> str:
             logger.warning(f"Plugin '{plugin}' not implemented in answer_engine yet. Using mock fallback.")
             
         return solve_with_mock(question, options)
+
+def get_answer(question: str, options: List[str]) -> str:
+    """
+    Main entry point for the answer engine.
+    Routes to the appropriate plugin based on config.
+    Uses LRU caching to return instant answers for previously seen questions.
+    """
+    return _cached_get_answer(question, tuple(options))

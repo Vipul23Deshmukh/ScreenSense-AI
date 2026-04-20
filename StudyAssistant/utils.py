@@ -92,10 +92,18 @@ def ensure_dirs() -> None:
 def save_qa_history(entry: Dict[str, Any]) -> None:
     """
     Append a Q&A entry to the JSON history file.
-    Each entry contains timestamp, question, options, answer, explanation, confidence.
+    Each entry contains timestamp, question, options, answer.
+    Avoids saving duplicate questions.
     """
     ensure_dirs()
     history = load_qa_history()
+    
+    new_q = entry.get("question", "").strip()
+    for item in history:
+        if item.get("question", "").strip() == new_q:
+            logger.debug("Duplicate question found in history. Skipping save.")
+            return
+
     entry["timestamp"] = datetime.datetime.now().isoformat()
     history.append(entry)
     try:
