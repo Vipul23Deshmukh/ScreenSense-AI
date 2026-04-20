@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyAI — Smart Study Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ░░ BACKGROUND CANVAS ░░ -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ░░ SIMULATED SCREEN / QUESTION AREA ░░ -->
+  <div class="screen-sim" id="screenSim">
+    <div class="screen-label">📄 Simulated Exam Screen</div>
+    <div class="question-block" id="questionBlock">
+      <p class="q-text">Which data structure uses LIFO (Last In, First Out) ordering?</p>
+      <ul class="options-list">
+        <li class="opt" data-val="A">A. Queue</li>
+        <li class="opt" data-val="B">B. Stack</li>
+        <li class="opt" data-val="C">C. Linked List</li>
+        <li class="opt" data-val="D">D. Hash Map</li>
+      </ul>
+    </div>
+    <div class="scan-overlay" id="scanOverlay"></div>
+  </div>
+
+  <!-- ░░ CONTROL PANEL ░░ -->
+  <div class="control-panel" id="controlPanel">
+    <div class="cp-header">
+      <div class="cp-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">StudyAI</span>
+      </div>
+      <div class="cp-version">v2.1</div>
+    </div>
+
+    <div class="status-row">
+      <div class="status-dot" id="statusDot"></div>
+      <span class="status-text" id="statusText">Idle</span>
+      <div class="status-pulse" id="statusPulse"></div>
+    </div>
+
+    <button class="start-btn" id="startBtn">
+      <span class="btn-icon" id="btnIcon">▶</span>
+      <span class="btn-label" id="btnLabel">Start Scanning</span>
+    </button>
+
+    <div class="hotkey-row">
+      <span class="hotkey-label">Quick trigger</span>
+      <div class="hotkey-badge">
+        <kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>A</kbd>
+      </div>
+    </div>
+
+    <div class="cp-divider"></div>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-val" id="scanCount">0</span>
+        <span class="stat-key">Scanned</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val" id="ansCount">0</span>
+        <span class="stat-key">Answered</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val" id="accVal">—</span>
+        <span class="stat-key">Accuracy</span>
+      </div>
+    </div>
+
+    <div class="demo-btn-row">
+      <button class="demo-btn" id="demoBtn">⚡ Run Demo</button>
+      <button class="demo-btn secondary" id="nextQBtn">Next Q →</button>
+    </div>
+  </div>
+
+  <!-- ░░ FLOATING ANSWER OVERLAY ░░ -->
+  <div class="answer-overlay" id="answerOverlay">
+    <div class="ao-glow"></div>
+
+    <div class="ao-header">
+      <div class="ao-badge">
+        <span class="ao-badge-dot"></span>
+        AI Answer
+      </div>
+      <div class="ao-conf" id="aoConf">98% confident</div>
+    </div>
+
+    <div class="ao-answer-row">
+      <div class="ao-letter" id="aoLetter">B</div>
+      <div class="ao-answer-text" id="aoAnswerText">Stack</div>
+    </div>
+
+    <div class="ao-divider"></div>
+
+    <p class="ao-explanation" id="aoExplanation">
+      Stack follows LIFO — the last element pushed is the first to be popped.
+    </p>
+
+    <div class="ao-footer">
+      <div class="ao-timer-bar">
+        <div class="ao-timer-fill" id="aoTimerFill"></div>
+      </div>
+      <span class="ao-timer-label" id="aoTimerLabel">Auto-hide in 8s</span>
+    </div>
+  </div>
+
+  <!-- ░░ SCANNING INDICATOR ░░ -->
+  <div class="scan-indicator" id="scanIndicator">
+    <div class="si-ring"></div>
+    <div class="si-ring r2"></div>
+    <div class="si-ring r3"></div>
+    <span class="si-text">Analyzing...</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

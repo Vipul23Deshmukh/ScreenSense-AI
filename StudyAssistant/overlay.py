@@ -1,0 +1,127 @@
+import tkinter as tk
+from config import OVERLAY_WIDTH, OVERLAY_HEIGHT, OVERLAY_POSITION
+
+class StudyOverlay:
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.title("Study Assistant Overlay")
+        
+        # 1. Always-on-top window
+        self.root.attributes("-topmost", True)
+        
+        # 2. Transparent background (Alpha transparency)
+        self.root.attributes("-alpha", 0.90)
+        
+        # Remove standard OS window borders for a clean look
+        self.root.overrideredirect(True)
+        
+        # Minimal and clean modern color palette
+        self.bg_color = "#1E1E2E"       # Deep dark blue/gray
+        self.text_color = "#A6E3A1"     # Vibrant pastel green
+        self.header_color = "#CDD6F4"   # Light text
+        
+        self.root.configure(bg=self.bg_color)
+        
+        # Set Position and Size from config
+        x, y = OVERLAY_POSITION
+        self.root.geometry(f"{OVERLAY_WIDTH}x{OVERLAY_HEIGHT}+{x}+{y}")
+        
+        # Dragging State
+        self._drag_data = {"x": 0, "y": 0}
+        
+        self._setup_ui()
+        self._bind_events()
+
+    def _setup_ui(self):
+        """Creates a minimal and clean UI layout."""
+        # Main container
+        self.frame = tk.Frame(self.root, bg=self.bg_color, bd=2, relief="flat")
+        self.frame.pack(expand=True, fill="both", padx=15, pady=15)
+        
+        # Header
+        self.header = tk.Label(
+            self.frame,
+            text="AI Study Assistant",
+            font=("Helvetica", 10, "bold"),
+            fg=self.header_color,
+            bg=self.bg_color,
+            anchor="w"
+        )
+        self.header.pack(fill="x", pady=(0, 10))
+        
+        # 3. Show answer clearly
+        self.answer_display = tk.Label(
+            self.frame,
+            text="Waiting for screen...",
+            font=("Helvetica", 28, "bold"),
+            fg=self.text_color,
+            bg=self.bg_color
+        )
+        self.answer_display.pack(expand=True, fill="both")
+        
+        # Footer hint
+        self.footer = tk.Label(
+            self.frame,
+            text="(Drag to move • Right-click to hide)",
+            font=("Helvetica", 8, "italic"),
+            fg="#6C7086",
+            bg=self.bg_color
+        )
+        self.footer.pack(side="bottom", anchor="e")
+
+    def _bind_events(self):
+        """4. Draggable window logic and shortcuts."""
+        # Left click and drag to move
+        self.root.bind("<ButtonPress-1>", self._on_drag_start)
+        self.root.bind("<B1-Motion>", self._on_drag_motion)
+        
+        # Right click to instantly hide the overlay
+        self.root.bind("<Button-3>", lambda e: self.hide())
+
+    def _on_drag_start(self, event):
+        """Record the start position for dragging."""
+        self._drag_data["x"] = event.x
+        self._drag_data["y"] = event.y
+
+    def _on_drag_motion(self, event):
+        """Calculate the new position and move the window."""
+        delta_x = event.x - self._drag_data["x"]
+        delta_y = event.y - self._drag_data["y"]
+        
+        new_x = self.root.winfo_x() + delta_x
+        new_y = self.root.winfo_y() + delta_y
+        
+        self.root.geometry(f"+{new_x}+{new_y}")
+
+    def display_answer(self, answer: str):
+        """Update the UI with the newly found answer."""
+        self.answer_display.config(text=f"Correct Answer: {answer}")
+        self.show()
+        
+    def set_status(self, text: str):
+        """Update the UI with a status message without changing it to an 'Answer' format."""
+        self.answer_display.config(text=text)
+        self.show()
+
+    def show(self):
+        """Make the overlay visible."""
+        self.root.deiconify()
+        
+    def hide(self):
+        """Hide the overlay."""
+        self.root.withdraw()
+
+    def update(self):
+        """Update Tkinter manually (useful if running in a custom main loop without threading)."""
+        self.root.update()
+
+    def run(self):
+        """Start the standard Tkinter blocking event loop."""
+        self.root.mainloop()
+
+# Quick test logic allowing the user to run the file directly
+if __name__ == "__main__":
+    print("Launching test overlay. Drag the window to move it, right-click to hide it.")
+    app = StudyOverlay()
+    app.display_answer("B")
+    app.run()

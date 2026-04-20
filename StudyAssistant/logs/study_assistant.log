@@ -1,0 +1,169 @@
+[23:53:03] INFO      main — =======================================================
+[23:53:03] INFO      main —   AI Study Assistant  starting…
+[23:53:03] INFO      main —   Region  : full screen
+[23:53:03] INFO      main —   AI plugin: ollama
+[23:53:03] INFO      main —   Hotkeys : ctrl+alt+s / ctrl+alt+h / ctrl+q
+[23:53:03] INFO      main — =======================================================
+[23:53:03] DEBUG     capture — mss initialised (primary capture backend)
+[23:53:04] INFO      ocr — Tesseract 5.5.0.20241111 ready
+[23:53:04] INFO      ocr — OCREngine ready  |  tesseract=True  easyocr=False
+[23:53:04] INFO      answer_engine — OllamaPlugin ready  model=llama3  url=http://localhost:11434/api/generate
+[23:53:04] INFO      main — Hotkeys registered  toggle=ctrl+alt+s  hide=ctrl+alt+h  quit=ctrl+q
+[23:53:23] DEBUG     change_detector — Change detected (36.67% pixels, 47522 px, frame #22)
+[23:53:23] DEBUG     change_detector — Change detected (0.31% pixels, 400 px, frame #23)
+[23:53:24] DEBUG     ocr — Tesseract extracted 727 chars
+[23:53:24] DEBUG     main — OCR result (727 chars): @ Apprrernpotsciak 8 | P Sipfotrar-Agmdens & || G) Asmipastenearna % || smipv en…
+[23:53:24] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:53:24] DEBUG     change_detector — Change detected (0.31% pixels, 400 px, frame #24)
+[23:53:26] DEBUG     change_detector — Change detected (57.14% pixels, 74056 px, frame #26)
+[23:53:27] DEBUG     change_detector — Change detected (4.70% pixels, 6097 px, frame #27)
+[23:53:28] DEBUG     ocr — Tesseract extracted 524 chars
+[23:53:28] DEBUG     main — OCR result (524 chars): @Warpibrototype\tecdback PSE eSinplelinteresterAptitude Quemmxam ln (WAStudyAssi…
+[23:53:28] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:53:29] DEBUG     change_detector — Change detected (76.25% pixels, 98824 px, frame #29)
+[23:53:29] DEBUG     change_detector — Change detected (0.34% pixels, 440 px, frame #30)
+[23:53:30] DEBUG     change_detector — Change detected (0.29% pixels, 379 px, frame #31)
+[23:53:31] DEBUG     change_detector — Change detected (84.34% pixels, 109306 px, frame #32)
+[23:53:32] DEBUG     change_detector — Change detected (17.14% pixels, 22217 px, frame #33)
+[23:53:33] DEBUG     change_detector — Change detected (70.65% pixels, 91562 px, frame #34)
+[23:53:34] DEBUG     ocr — Tesseract extracted 787 chars
+[23:53:34] DEBUG     main — OCR result (787 chars): O apiraaperctiak 8 || P suppims-ampae 2 || ) asmyAstemou 8 || sayW smesmyAsie #8…
+[23:53:34] DEBUG     parser — No valid MCQ found in text (q=131 chars, opts=1)
+[23:53:34] INFO      main — Parser could not extract a valid MCQ — skipping
+[23:53:34] DEBUG     change_detector — Change detected (80.97% pixels, 104934 px, frame #35)
+[23:53:35] DEBUG     change_detector — Change detected (22.13% pixels, 28678 px, frame #36)
+[23:53:36] DEBUG     change_detector — Change detected (20.47% pixels, 26526 px, frame #37)
+[23:53:36] DEBUG     change_detector — Change detected (14.20% pixels, 18409 px, frame #38)
+[23:53:37] DEBUG     change_detector — Change detected (11.82% pixels, 15318 px, frame #39)
+[23:53:37] DEBUG     ocr — Tesseract extracted 1196 chars
+[23:53:37] DEBUG     main — OCR result (1196 chars): O aprypetams 8 | OSmbi-_MDEr x |G asmyratemet 8 | smap smemyisim so ( restemsent…
+[23:53:37] DEBUG     parser — No valid MCQ found in text (q=99 chars, opts=1)
+[23:53:37] INFO      main — Parser could not extract a valid MCQ — skipping
+[23:53:39] DEBUG     change_detector — Change detected (2.27% pixels, 2942 px, frame #41)
+[23:53:41] DEBUG     change_detector — Change detected (2.11% pixels, 2740 px, frame #43)
+[23:53:42] DEBUG     change_detector — Change detected (61.25% pixels, 79378 px, frame #44)
+[23:53:42] DEBUG     change_detector — Change detected (61.08% pixels, 79160 px, frame #45)
+[23:53:43] DEBUG     ocr — Tesseract extracted 1509 chars
+[23:53:43] DEBUG     main — OCR result (1509 chars): (@)Avorprototype|keedbacky PB OSESimple|interesteyApttudel QUcHmEXmmIM () BANStu…
+[23:53:43] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:53:43] DEBUG     change_detector — Change detected (61.07% pixels, 79153 px, frame #46)
+[23:53:48] DEBUG     change_detector — Change detected (61.07% pixels, 79153 px, frame #51)
+[23:53:49] DEBUG     ocr — Tesseract extracted 1435 chars
+[23:53:49] DEBUG     main — OCR result (1435 chars): O apiraapercink 8 || @ smppiems-am@e 2 || G) asmyastemou 8 || Suay suancrayAsat …
+[23:53:49] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:53:50] INFO      main — ⏸ Monitoring PAUSED
+[23:54:05] INFO      main — ▶ Monitoring ON
+[23:54:06] DEBUG     change_detector — Change detected (61.06% pixels, 79132 px, frame #55)
+[23:54:08] DEBUG     ocr — Tesseract extracted 1624 chars
+[23:54:08] DEBUG     main — OCR result (1624 chars): spread 8 || PD Smpfotaet-Apmnto@ne 8 || G) AswayAstennButs 8 || Say smEysstm & |…
+[23:54:08] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:54:10] INFO      main — Overlay hidden — trigger a new question to show it again
+[23:54:11] DEBUG     change_detector — Change detected (0.42% pixels, 545 px, frame #61)
+[23:54:13] DEBUG     ocr — Tesseract extracted 1764 chars
+[23:54:13] DEBUG     main — OCR result (1764 chars): prunpoteciak 8 || D Saptotmen-apmtane & | G) ASwdyAciemetud % || SuiM SransingyA…
+[23:54:13] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:54:16] INFO      main — Overlay hidden — trigger a new question to show it again
+[23:54:17] DEBUG     change_detector — Change detected (0.39% pixels, 506 px, frame #68)
+[23:54:19] INFO      main — Quit hotkey pressed — shutting down…
+[23:54:19] DEBUG     ocr — Tesseract extracted 1784 chars
+[23:54:19] DEBUG     main — OCR result (1784 chars): prunpoteciak 8 || D Saptotmen-apmtane & | G) ASwdyAciemetud % || SuiM SransingyA…
+[23:54:19] DEBUG     main — No MCQ detected in OCR output — skipping
+[23:54:20] INFO      main — Goodbye.
+No history yet.
+[00:04:02] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[00:04:02] INFO      capture — mss backend ready  region=None  monitor={'left': 0, 'top': 0, 'width': 1920, 'height': 1080}
+[00:04:02] DEBUG     change_detector — Change detected (16.24% pixels, 21044 px, frame #2)
+[00:04:02] DEBUG     change_detector — Change detected (1.01% pixels, 1314 px, frame #3)
+[00:04:02] DEBUG     change_detector — Change detected (3.62% pixels, 4687 px, frame #4)
+[00:04:02] DEBUG     change_detector — Change detected (0.20% pixels, 257 px, frame #5)
+[00:04:02] DEBUG     change_detector — Change detected (0.67% pixels, 863 px, frame #6)
+[00:04:02] DEBUG     change_detector — Change detected (0.20% pixels, 256 px, frame #8)
+[00:04:05] DEBUG     change_detector — Change detected (0.16% pixels, 206 px, frame #48)
+[00:04:09] DEBUG     change_detector — Change detected (13.83% pixels, 17928 px, frame #93)
+[00:04:09] DEBUG     change_detector — Change detected (3.96% pixels, 5138 px, frame #94)
+[00:04:09] DEBUG     change_detector — Change detected (2.57% pixels, 3331 px, frame #95)
+[00:04:09] DEBUG     change_detector — Change detected (0.98% pixels, 1267 px, frame #96)
+[00:04:09] DEBUG     change_detector — Change detected (0.46% pixels, 590 px, frame #97)
+[00:04:09] DEBUG     change_detector — Change detected (0.34% pixels, 436 px, frame #98)
+[00:04:09] DEBUG     change_detector — Change detected (0.29% pixels, 378 px, frame #99)
+[00:04:09] DEBUG     change_detector — Change detected (0.28% pixels, 363 px, frame #100)
+[00:04:10] DEBUG     change_detector — Change detected (2.33% pixels, 3016 px, frame #101)
+[00:04:10] DEBUG     change_detector — Change detected (2.69% pixels, 3489 px, frame #102)
+[00:04:10] DEBUG     change_detector — Change detected (2.50% pixels, 3243 px, frame #103)
+[00:04:10] DEBUG     change_detector — Change detected (2.51% pixels, 3254 px, frame #104)
+[00:04:10] DEBUG     change_detector — Change detected (2.56% pixels, 3322 px, frame #105)
+[00:04:10] DEBUG     change_detector — Change detected (1.72% pixels, 2233 px, frame #106)
+[00:04:10] DEBUG     change_detector — Change detected (1.58% pixels, 2042 px, frame #107)
+[00:04:10] DEBUG     change_detector — Change detected (1.39% pixels, 1802 px, frame #108)
+[00:04:10] DEBUG     change_detector — Change detected (1.27% pixels, 1643 px, frame #109)
+[00:04:10] DEBUG     change_detector — Change detected (1.19% pixels, 1546 px, frame #110)
+[00:04:10] DEBUG     change_detector — Change detected (1.19% pixels, 1543 px, frame #111)
+[00:04:10] DEBUG     change_detector — Change detected (1.05% pixels, 1362 px, frame #112)
+[00:04:10] DEBUG     change_detector — Change detected (1.31% pixels, 1704 px, frame #113)
+[00:04:10] DEBUG     change_detector — Change detected (1.26% pixels, 1630 px, frame #114)
+[00:04:10] DEBUG     change_detector — Change detected (0.55% pixels, 716 px, frame #115)
+[00:04:11] DEBUG     change_detector — Change detected (0.17% pixels, 221 px, frame #116)
+[00:04:14] DEBUG     change_detector — Change detected (0.24% pixels, 315 px, frame #166)
+[00:04:14] DEBUG     change_detector — Change detected (0.27% pixels, 346 px, frame #171)
+[00:04:15] DEBUG     change_detector — Change detected (14.33% pixels, 18578 px, frame #172)
+[00:04:15] DEBUG     change_detector — Change detected (11.46% pixels, 14857 px, frame #173)
+[00:04:15] DEBUG     change_detector — Change detected (6.88% pixels, 8919 px, frame #174)
+[00:04:15] DEBUG     change_detector — Change detected (1.96% pixels, 2539 px, frame #175)
+[00:04:15] DEBUG     change_detector — Change detected (0.76% pixels, 985 px, frame #176)
+[00:04:15] DEBUG     change_detector — Change detected (0.30% pixels, 389 px, frame #177)
+[00:04:15] DEBUG     change_detector — Change detected (0.19% pixels, 251 px, frame #178)
+[00:04:15] DEBUG     change_detector — Change detected (0.20% pixels, 255 px, frame #179)
+[00:04:15] DEBUG     change_detector — Change detected (0.22% pixels, 281 px, frame #181)
+[00:04:15] DEBUG     change_detector — Change detected (0.18% pixels, 238 px, frame #182)
+[00:04:15] DEBUG     change_detector — Change detected (0.16% pixels, 209 px, frame #183)
+[00:04:15] DEBUG     change_detector — Change detected (0.18% pixels, 229 px, frame #184)
+[00:04:15] DEBUG     change_detector — Change detected (0.17% pixels, 218 px, frame #185)
+[00:04:15] DEBUG     change_detector — Change detected (0.16% pixels, 206 px, frame #186)
+[00:04:16] DEBUG     change_detector — Change detected (0.23% pixels, 298 px, frame #188)
+[00:04:16] DEBUG     change_detector — Change detected (0.16% pixels, 204 px, frame #189)
+[00:04:16] DEBUG     change_detector — Change detected (0.19% pixels, 250 px, frame #190)
+[00:04:16] DEBUG     change_detector — Change detected (0.17% pixels, 217 px, frame #191)
+[00:04:16] DEBUG     change_detector — Change detected (0.24% pixels, 317 px, frame #193)
+[00:04:16] DEBUG     change_detector — Change detected (0.17% pixels, 218 px, frame #194)
+[00:04:16] DEBUG     change_detector — Change detected (0.19% pixels, 252 px, frame #195)
+[00:04:16] DEBUG     change_detector — Change detected (0.17% pixels, 221 px, frame #196)
+[00:04:16] DEBUG     change_detector — Change detected (0.16% pixels, 203 px, frame #197)
+[00:04:16] DEBUG     change_detector — Change detected (0.27% pixels, 356 px, frame #199)
+[00:04:16] DEBUG     change_detector — Change detected (0.17% pixels, 225 px, frame #200)
+[00:04:16] DEBUG     change_detector — Change detected (0.20% pixels, 262 px, frame #201)
+[00:04:17] DEBUG     change_detector — Change detected (0.20% pixels, 259 px, frame #202)
+[00:04:17] DEBUG     change_detector — Change detected (0.19% pixels, 242 px, frame #203)
+[00:04:17] DEBUG     change_detector — Change detected (0.19% pixels, 243 px, frame #204)
+[00:04:17] DEBUG     change_detector — Change detected (0.19% pixels, 246 px, frame #205)
+[00:04:17] DEBUG     change_detector — Change detected (0.17% pixels, 219 px, frame #206)
+[00:04:17] DEBUG     change_detector — Change detected (0.23% pixels, 300 px, frame #208)
+[00:04:23] DEBUG     change_detector — Change detected (0.25% pixels, 320 px, frame #300)
+[00:04:23] DEBUG     change_detector — Change detected (17.57% pixels, 22768 px, frame #305)
+[00:04:24] DEBUG     change_detector — Change detected (1.32% pixels, 1709 px, frame #306)
+[00:04:24] DEBUG     change_detector — Change detected (2.86% pixels, 3712 px, frame #307)
+[00:17:15] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[00:17:25] DEBUG     change_detector — Change detected (0.43% pixels, 557 px, frame #12)
+[00:18:20] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[00:18:31] DEBUG     change_detector — Change detected (0.56% pixels, 722 px, frame #13)
+[00:18:33] DEBUG     change_detector — Change detected (1.99% pixels, 2576 px, frame #14)
+[00:18:35] DEBUG     change_detector — Change detected (2.46% pixels, 3182 px, frame #15)
+[00:18:37] DEBUG     change_detector — Change detected (1.34% pixels, 1732 px, frame #16)
+[00:18:39] DEBUG     change_detector — Change detected (1.36% pixels, 1757 px, frame #17)
+[00:18:42] DEBUG     change_detector — Change detected (20.04% pixels, 25966 px, frame #18)
+[00:18:44] DEBUG     change_detector — Change detected (0.32% pixels, 410 px, frame #19)
+[00:18:46] DEBUG     change_detector — Change detected (0.32% pixels, 410 px, frame #20)
+[00:18:49] DEBUG     change_detector — Change detected (28.29% pixels, 36658 px, frame #21)
+[00:18:51] DEBUG     change_detector — Change detected (85.42% pixels, 110704 px, frame #22)
+[00:18:53] DEBUG     change_detector — Change detected (2.42% pixels, 3130 px, frame #23)
+[00:18:56] DEBUG     change_detector — Change detected (1.02% pixels, 1326 px, frame #27)
+[00:18:59] DEBUG     change_detector — Change detected (0.21% pixels, 275 px, frame #31)
+[00:19:01] DEBUG     change_detector — Change detected (3.88% pixels, 5027 px, frame #32)
+[00:19:02] DEBUG     change_detector — Change detected (2.03% pixels, 2636 px, frame #33)
+[00:19:03] DEBUG     change_detector — Change detected (0.86% pixels, 1119 px, frame #34)
+[00:19:04] DEBUG     change_detector — Change detected (10.78% pixels, 13976 px, frame #35)
+[00:19:04] DEBUG     change_detector — Change detected (8.09% pixels, 10488 px, frame #36)
+[00:19:05] DEBUG     change_detector — Change detected (6.29% pixels, 8154 px, frame #37)
+[00:19:07] DEBUG     change_detector — Change detected (5.62% pixels, 7283 px, frame #38)
+[00:19:09] DEBUG     change_detector — Change detected (2.41% pixels, 3129 px, frame #39)
+[00:19:13] DEBUG     change_detector — Change detected (85.44% pixels, 110725 px, frame #44)
+[00:19:16] DEBUG     change_detector — Change detected (54.55% pixels, 70703 px, frame #45)
