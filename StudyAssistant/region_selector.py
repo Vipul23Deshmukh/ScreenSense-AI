@@ -71,4 +71,4 @@ def select_region() -> Optional[Tuple[int, int, int, int]]:
 
 if __name__ == "__main__":
     region = select_region()
-    print("Selected region:", region)
+    # No print in production mode

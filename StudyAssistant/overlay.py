@@ -2,8 +2,11 @@ import tkinter as tk
 from config import OVERLAY_WIDTH, OVERLAY_HEIGHT, OVERLAY_POSITION
 
 class StudyOverlay:
-    def __init__(self):
-        self.root = tk.Tk()
+    def __init__(self, root=None):
+        if root:
+            self.root = tk.Toplevel(root)
+        else:
+            self.root = tk.Tk()
         self.root.title("Study Assistant Overlay")
         
         # 1. Always-on-top window
@@ -40,41 +43,46 @@ class StudyOverlay:
         self._bind_events()
 
     def _setup_ui(self):
-        """Creates a minimal and clean UI layout."""
+        """Creates a minimal and clean UI layout for structured answers."""
         # Main container
-        self.frame = tk.Frame(self.root, bg=self.bg_color, bd=2, relief="flat")
-        self.frame.pack(expand=True, fill="both", padx=15, pady=15)
+        self.frame = tk.Frame(self.root, bg=self.bg_color, bd=0, relief="flat")
+        self.frame.pack(expand=True, fill="both", padx=20, pady=15)
         
-        # Header
-        self.header = tk.Label(
-            self.frame,
-            text="AI Study Assistant",
-            font=("Helvetica", 10, "bold"),
-            fg=self.header_color,
-            bg=self.bg_color,
-            anchor="w"
-        )
-        self.header.pack(fill="x", pady=(0, 10))
+        # Top row: Letter and Option Text
+        self.top_row = tk.Frame(self.frame, bg=self.bg_color)
+        self.top_row.pack(fill="x", anchor="w")
         
-        # 3. Show answer clearly
-        self.answer_display = tk.Label(
-            self.frame,
-            text="Waiting for screen...",
-            font=("Helvetica", 28, "bold"),
+        self.letter_label = tk.Label(
+            self.top_row,
+            text="?",
+            font=("Segoe UI", 32, "bold"),
             fg=self.text_color,
             bg=self.bg_color
         )
-        self.answer_display.pack(expand=True, fill="both")
+        self.letter_label.pack(side="left", padx=(0, 15))
         
-        # Footer hint
-        self.footer = tk.Label(
-            self.frame,
-            text="(Drag to move • Right-click to hide)",
-            font=("Helvetica", 8, "italic"),
-            fg="#6C7086",
-            bg=self.bg_color
+        self.option_label = tk.Label(
+            self.top_row,
+            text="Waiting for scan...",
+            font=("Segoe UI", 12, "bold"),
+            fg=self.header_color,
+            bg=self.bg_color,
+            wraplength=350,
+            justify="left"
         )
-        self.footer.pack(side="bottom", anchor="e")
+        self.option_label.pack(side="left", fill="x", expand=True)
+        
+        # Bottom row: Explanation
+        self.explanation_label = tk.Label(
+            self.frame,
+            text="",
+            font=("Segoe UI", 10, "italic"),
+            fg="#9499B0",
+            bg=self.bg_color,
+            wraplength=420,
+            justify="left"
+        )
+        self.explanation_label.pack(fill="x", pady=(10, 0), anchor="w")
 
     def _bind_events(self):
         """4. Draggable window logic and shortcuts."""
@@ -100,15 +108,52 @@ class StudyOverlay:
         
         self.root.geometry(f"+{new_x}+{new_y}")
 
-    def display_answer(self, answer: str):
-        """Update the UI with the newly found answer."""
-        self.answer_display.config(text=f"Correct Answer: {answer}")
+    def display_answer(self, result: dict):
+        """Update the UI with structured answer and show with fade-in."""
+        if not isinstance(result, dict):
+            return
+            
+        self.letter_label.config(text=result.get("letter", "?"), fg=self.text_color)
+        self.option_label.config(text=result.get("text", "No option text"), fg=self.header_color)
+        self.explanation_label.config(text=result.get("explanation", "No explanation available."))
+        
         self.show()
+        self._fade_in()
+        
+        # Auto-hide after 8 seconds
+        self.root.after(8000, self._fade_out)
+
+    def display_error(self, message: str):
+        """Show an error message in the overlay."""
+        self.letter_label.config(text="!", fg="#e74c3c")
+        self.option_label.config(text="AI ERROR", fg="#e74c3c")
+        self.explanation_label.config(text=message)
+        
+        self.show()
+        self._fade_in()
+        self.root.after(5000, self._fade_out)
         
     def set_status(self, text: str):
-        """Update the UI with a status message without changing it to an 'Answer' format."""
-        self.answer_display.config(text=text)
+        self.option_label.config(text=text)
+        self.explanation_label.config(text="")
+        self.letter_label.config(text="...")
         self.show()
+
+    def _fade_in(self):
+        alpha = self.root.attributes("-alpha")
+        if alpha < 0.95:
+            alpha += 0.05
+            self.root.attributes("-alpha", alpha)
+            self.root.after(20, self._fade_in)
+
+    def _fade_out(self):
+        alpha = self.root.attributes("-alpha")
+        if alpha > 0.05:
+            alpha -= 0.05
+            self.root.attributes("-alpha", alpha)
+            self.root.after(20, self._fade_out)
+        else:
+            self.hide()
 
     def show(self):
         """Make the overlay visible."""
@@ -116,6 +161,7 @@ class StudyOverlay:
         
     def hide(self):
         """Hide the overlay."""
+        self.root.attributes("-alpha", 0.0)
         self.root.withdraw()
 
     def update(self):
@@ -130,5 +176,9 @@ class StudyOverlay:
 if __name__ == "__main__":
     print("Launching test overlay. Drag the window to move it, right-click to hide it.")
     app = StudyOverlay()
-    app.display_answer("B")
+    app.display_answer({
+        "letter": "B",
+        "text": "Berlin",
+        "explanation": "Berlin is the capital of Germany."
+    })
     app.run()

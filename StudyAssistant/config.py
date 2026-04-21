@@ -45,6 +45,9 @@ TESSERACT_CMD = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 # Tesseract language(s). Use "eng+fra" for multi-language, etc.
 OCR_LANGUAGE = "eng"
 
+# Upscale factor to improve OCR on small text (e.g. 2 or 3)
+OCR_RESIZE_FACTOR = 3
+
 # Use EasyOCR as fallback if Tesseract fails or returns garbage
 USE_EASYOCR_FALLBACK = True
 

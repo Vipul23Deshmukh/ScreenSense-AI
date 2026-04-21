@@ -8,19 +8,32 @@ try:
 except ImportError:
     OpenAI = None
 
-from config import AI_PLUGIN, OPENAI_API_KEY, OPENAI_MODEL, AI_TIMEOUT
+import requests
+import json
+
+from config import AI_PLUGIN, OPENAI_API_KEY, OPENAI_MODEL, AI_TIMEOUT, OLLAMA_BASE_URL, OLLAMA_MODEL
 
 logger = logging.getLogger(__name__)
 
-# Strong prompt engineered for high accuracy and strict formatting constraints
+# Enhanced prompt for structured response
 SYSTEM_PROMPT = """You are an expert exam solver. 
 You will be provided with a multiple-choice question and its options.
-Your task is to determine the absolute correct answer.
+Your task is to determine the correct answer and provide a brief explanation.
 
-CRITICAL INSTRUCTIONS:
-- Return ONLY the exact letter or number of the correct option (e.g., A, B, C, D, 1, 2).
-- Do NOT provide any explanation, period, or punctuation.
-- Your entire response must be exactly one character/label long.
+RESPONSE FORMAT:
+You MUST return a JSON object with the following fields:
+1. "letter": The exact letter of the correct option (e.g., "A").
+2. "text": The full text of the correct option.
+3. "explanation": A one-sentence explanation of why this answer is correct.
+
+Example Response:
+{
+  "letter": "B",
+  "text": "Paris",
+  "explanation": "Paris is the capital of France and its most populous city."
+}
+
+Do NOT provide any text outside of the JSON block.
 """
 
 def extract_labels(options: List[str]) -> List[str]:
@@ -40,16 +53,43 @@ def extract_labels(options: List[str]) -> List[str]:
         labels.append(label.upper())
     return labels
 
-def solve_with_mock(question: str, options: List[str]) -> str:
-    """Mock solver for offline mode or fallback. Returns a random option."""
-    logger.info("Using MOCK answer engine.")
-    if not options:
-        return "A"
+def solve_with_ollama(question: str, options: List[str]) -> dict:
+    """Solves the MCQ using a local Ollama instance."""
+    url = f"{OLLAMA_BASE_URL}/api/generate"
     
-    labels = extract_labels(options)
-    return random.choice(labels)
+    options_text = "\n".join(options)
+    prompt = f"{SYSTEM_PROMPT}\n\nQuestion:\n{question}\n\nOptions:\n{options_text}\n\nJSON Response:"
+    
+    payload = {
+        "model": OLLAMA_MODEL,
+        "prompt": prompt,
+        "stream": False,
+        "format": "json" # Ollama supports forced JSON format
+    }
+    
+    try:
+        response = requests.post(url, json=payload, timeout=AI_TIMEOUT)
+        response.raise_for_status()
+        data = response.json()
+        
+        raw_resp_text = data.get("response", "{}")
+        # Parse the JSON string from response
+        result = json.loads(raw_resp_text)
+        result["raw_response"] = raw_resp_text
+        return result
+    except Exception as e:
+        logger.error(f"Ollama API error: {e}")
+        return {"error": str(e), "raw_response": "No response"}
 
-def solve_with_openai(question: str, options: List[str]) -> str:
+def check_ollama_status() -> bool:
+    """Verifies if the Ollama server is reachable."""
+    try:
+        response = requests.get(f"{OLLAMA_BASE_URL}/api/tags", timeout=2)
+        return response.status_code == 200
+    except:
+        return False
+
+def solve_with_openai(question: str, options: List[str]) -> dict:
     """Solves the MCQ using OpenAI's API."""
     if not OpenAI:
         logger.error("OpenAI package not installed. Falling back to mock.")
@@ -71,47 +111,58 @@ def solve_with_openai(question: str, options: List[str]) -> str:
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_prompt}
             ],
-            temperature=0.0, # 0.0 for highly deterministic/factual answers
-            max_tokens=5,    # Constrain output length tightly
+            temperature=0.0,
+            response_format={"type": "json_object"}
         )
         
-        answer = response.choices[0].message.content.strip()
-        
-        # Cleanup fallback: if the AI disobeys and gives "A." or "A)", clean it
-        answer = answer.replace('.', '').replace(')', '').replace(':', '').strip()
-        
-        # Final safety check: if it still gave a long explanation, extract just the first letter
-        if len(answer) > 2:
-            answer = answer[0].upper()
-            
-        return answer
+        result = json.loads(response.choices[0].message.content.strip())
+        return result
         
     except Exception as e:
         logger.error(f"OpenAI API error: {e}. Falling back to mock.")
         return solve_with_mock(question, options)
 
+def solve_with_mock(question: str, options: List[str]) -> dict:
+    """Mock solver for offline mode or fallback. Returns a structured dummy response."""
+    logger.info("Using MOCK answer engine.")
+    if not options:
+        return {"letter": "A", "text": "Mock Option", "explanation": "This is a mock answer."}
+    
+    labels = extract_labels(options)
+    letter = random.choice(labels)
+    # Find the option text that matches the letter
+    text = "Unknown Option"
+    for opt in options:
+        if opt.startswith(letter):
+            text = opt.split(')', 1)[-1].strip() if ')' in opt else opt
+            break
+            
+    return {
+        "letter": letter,
+        "text": text,
+        "explanation": "This is a simulated explanation for testing purposes."
+    }
+
 from functools import lru_cache
 
 @lru_cache(maxsize=100)
-def _cached_get_answer(question: str, options_tuple: tuple) -> str:
+def _cached_get_answer(question: str, options_tuple: tuple) -> dict:
     """Cached inner function for get_answer."""
     options = list(options_tuple)
     plugin = AI_PLUGIN.lower()
     
     if plugin == "openai":
         return solve_with_openai(question, options)
+    elif plugin == "ollama":
+        return solve_with_ollama(question, options)
     else:
-        # Fallback to mock for ollama/groq for now if not implemented,
-        # but user specifically asked for "OpenAI API or mock"
-        if plugin not in ("openai", "mock"):
+        if plugin != "mock":
             logger.warning(f"Plugin '{plugin}' not implemented in answer_engine yet. Using mock fallback.")
-            
         return solve_with_mock(question, options)
 
-def get_answer(question: str, options: List[str]) -> str:
+def get_answer(question: str, options: List[str]) -> dict:
     """
     Main entry point for the answer engine.
-    Routes to the appropriate plugin based on config.
-    Uses LRU caching to return instant answers for previously seen questions.
+    Returns a dict: {"letter": "A", "text": "...", "explanation": "..."}
     """
     return _cached_get_answer(question, tuple(options))

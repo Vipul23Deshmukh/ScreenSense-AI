@@ -391,3 +391,1078 @@ No history yet.
 [01:08:41] DEBUG     main — Screen is stable. Running OCR...
 [01:08:46] INFO      main — Exit hotkey pressed.
 [01:08:46] INFO      main — Study Assistant shutting down.
+[12:25:44] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[12:25:46] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r)
+[12:25:46] INFO      main — Starting background screen monitoring loop...
+[12:25:46] INFO      main — AI Study Assistant is initialized and listening!
+[12:25:47] DEBUG     main — Screen is stable. Running OCR...
+[12:25:56] DEBUG     change_detector — Change detected (1.24% pixels, 1605 px, frame #2)
+[12:25:57] DEBUG     main — Screen is stable. Running OCR...
+[12:26:03] DEBUG     change_detector — Change detected (3.17% pixels, 4107 px, frame #4)
+[12:26:04] DEBUG     main — Screen is stable. Running OCR...
+[12:26:10] DEBUG     change_detector — Change detected (2.42% pixels, 3133 px, frame #6)
+[12:26:11] DEBUG     main — Screen is stable. Running OCR...
+[12:26:13] INFO      main — Exit hotkey pressed.
+[12:26:13] INFO      main — Study Assistant shutting down.
+[12:48:25] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[12:48:25] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[12:48:25] INFO      main — Starting background screen monitoring loop...
+[12:48:25] INFO      main — AI Study Assistant is initialized and listening!
+[12:49:28] DEBUG     main — Capture region updated: (100, 100, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (102, 103, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (107, 109, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (133, 136, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (170, 175, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (186, 192, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (186, 192, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (207, 215, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (221, 227, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (224, 231, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (226, 232, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (231, 237, 400, 300)
+[12:49:28] DEBUG     main — Capture region updated: (232, 237, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (233, 239, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (234, 240, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (234, 241, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (236, 242, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (237, 243, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (237, 244, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (239, 245, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (241, 247, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (244, 249, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (245, 250, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (245, 251, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (246, 251, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (247, 252, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (249, 253, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (256, 259, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (263, 264, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (275, 273, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (283, 282, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (291, 288, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (298, 293, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (301, 296, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (304, 298, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (311, 302, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (331, 316, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (338, 323, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (351, 334, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (355, 338, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (355, 339, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (355, 340, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (356, 342, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (357, 343, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (358, 346, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (359, 349, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (359, 350, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (360, 351, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (360, 352, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (360, 354, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (360, 355, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (361, 355, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (361, 356, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (361, 357, 400, 300)
+[12:49:29] DEBUG     main — Capture region updated: (361, 358, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (361, 359, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (361, 360, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (361, 361, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (362, 361, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (363, 361, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (363, 362, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (364, 362, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (365, 363, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (365, 364, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (366, 364, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (367, 364, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (367, 365, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 365, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 366, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 367, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 368, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 369, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 370, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 371, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 372, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 373, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 374, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 375, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 377, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 378, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 379, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 380, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 382, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 383, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 384, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 385, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 386, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 387, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 388, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 389, 400, 300)
+[12:49:30] DEBUG     main — Capture region updated: (368, 390, 400, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 400, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 402, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 407, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 427, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 466, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 494, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 499, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 505, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 506, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 508, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 510, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 512, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 514, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 519, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 529, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 537, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 540, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 545, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 549, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 553, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 558, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 563, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 566, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 570, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 573, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 575, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 576, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 579, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 580, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 582, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 584, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 586, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 587, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 589, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 590, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 592, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 594, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 595, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 596, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 597, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 599, 300)
+[12:49:34] DEBUG     main — Capture region updated: (368, 390, 603, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 606, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 609, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 612, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 614, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 616, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 617, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 620, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 623, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 626, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 628, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 632, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 634, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 635, 300)
+[12:49:35] DEBUG     main — Capture region updated: (368, 390, 636, 300)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 300)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 303)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 320)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 351)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 400)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 427)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 434)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 440)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 444)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 449)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 450)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 451)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 453)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 456)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 457)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 459)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 460)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 461)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 462)
+[12:49:37] DEBUG     main — Capture region updated: (368, 390, 636, 463)
+[12:49:41] INFO      main — Monitoring Resumed
+[12:49:41] DEBUG     main — Screen is stable. Running OCR...
+[12:49:43] INFO      main — Manual scan triggered.
+[12:49:44] DEBUG     main — Screen is stable. Running OCR...
+[12:49:46] DEBUG     main — Screen is stable. Running OCR...
+[12:49:47] DEBUG     main — Screen is stable. Running OCR...
+[12:49:48] DEBUG     main — Screen is stable. Running OCR...
+[12:49:49] INFO      main — Manual scan triggered.
+[12:49:49] DEBUG     main — Screen is stable. Running OCR...
+[12:49:50] DEBUG     main — Screen is stable. Running OCR...
+[12:49:52] DEBUG     main — Screen is stable. Running OCR...
+[12:49:53] DEBUG     main — Screen is stable. Running OCR...
+[12:49:54] DEBUG     main — Screen is stable. Running OCR...
+[12:49:55] DEBUG     main — Screen is stable. Running OCR...
+[12:49:56] DEBUG     main — Screen is stable. Running OCR...
+[12:49:58] DEBUG     main — Screen is stable. Running OCR...
+[12:49:59] DEBUG     main — Screen is stable. Running OCR...
+[12:50:00] DEBUG     main — Screen is stable. Running OCR...
+[12:50:01] DEBUG     main — Screen is stable. Running OCR...
+[12:50:02] DEBUG     main — Screen is stable. Running OCR...
+[12:50:04] DEBUG     main — Screen is stable. Running OCR...
+[12:50:05] DEBUG     main — Screen is stable. Running OCR...
+[12:50:06] DEBUG     main — Screen is stable. Running OCR...
+[12:50:06] INFO      main — Manual scan triggered.
+[12:50:07] DEBUG     main — Screen is stable. Running OCR...
+[12:50:08] DEBUG     main — Screen is stable. Running OCR...
+[12:50:10] DEBUG     main — Screen is stable. Running OCR...
+[12:50:11] DEBUG     main — Screen is stable. Running OCR...
+[12:50:12] DEBUG     main — Screen is stable. Running OCR...
+[12:50:13] DEBUG     main — Screen is stable. Running OCR...
+[12:50:15] DEBUG     main — Screen is stable. Running OCR...
+[12:50:16] DEBUG     main — Screen is stable. Running OCR...
+[12:50:17] DEBUG     main — Screen is stable. Running OCR...
+[12:50:18] DEBUG     main — Screen is stable. Running OCR...
+[12:50:19] DEBUG     main — Screen is stable. Running OCR...
+[12:50:20] DEBUG     main — Screen is stable. Running OCR...
+[12:50:22] DEBUG     main — Screen is stable. Running OCR...
+[12:50:22] INFO      main — Manual scan triggered.
+[12:50:23] INFO      main — Manual scan triggered.
+[12:50:23] DEBUG     main — Screen is stable. Running OCR...
+[12:50:23] INFO      main — Manual scan triggered.
+[12:50:23] INFO      main — Manual scan triggered.
+[12:50:23] INFO      main — Manual scan triggered.
+[12:50:23] INFO      main — Manual scan triggered.
+[12:50:24] DEBUG     main — Screen is stable. Running OCR...
+[12:50:25] DEBUG     change_detector — Change detected (100.00% pixels, 18285 px, frame #36)
+[12:50:26] DEBUG     change_detector — Change detected (100.00% pixels, 18285 px, frame #37)
+[12:50:27] DEBUG     main — Screen is stable. Running OCR...
+[12:50:29] INFO      main — Monitoring Paused
+[12:50:32] INFO      main — Monitoring Resumed
+[12:51:05] INFO      main — Monitoring Paused
+[12:55:01] INFO      main — Monitoring Resumed
+[12:55:02] DEBUG     change_detector — Change detected (91.51% pixels, 16732 px, frame #83)
+[12:55:03] DEBUG     main — Screen is stable. Running OCR...
+[12:55:04] DEBUG     change_detector — Change detected (21.59% pixels, 3948 px, frame #85)
+[12:55:05] DEBUG     main — Screen is stable. Running OCR...
+[12:55:05] DEBUG     main — Capture region updated: (368, 390, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (369, 389, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (376, 386, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (390, 380, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (407, 374, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (413, 371, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (427, 366, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (434, 363, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (445, 360, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (470, 350, 636, 463)
+[12:55:05] DEBUG     main — Capture region updated: (479, 347, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (500, 340, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (508, 339, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (510, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (512, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (515, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (516, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (518, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (519, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (520, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (521, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (522, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (523, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (524, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (525, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (527, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (528, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (529, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (531, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (532, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (533, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (534, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (535, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (536, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (537, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (539, 338, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (540, 339, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (542, 339, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (546, 341, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (550, 341, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (555, 344, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (562, 346, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (565, 347, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (568, 347, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (569, 348, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (571, 349, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (574, 350, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (575, 350, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (576, 350, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (576, 351, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (578, 351, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (579, 351, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (580, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (581, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (582, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (583, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (584, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (585, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (586, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (587, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (588, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (589, 352, 636, 463)
+[12:55:06] DEBUG     main — Capture region updated: (589, 353, 636, 463)
+[12:55:07] DEBUG     change_detector — Change detected (8.30% pixels, 1517 px, frame #87)
+[12:55:08] DEBUG     main — Screen is stable. Running OCR...
+[12:55:08] INFO      main — Manual scan triggered.
+[12:55:15] INFO      main — Manual scan triggered.
+[12:55:16] DEBUG     change_detector — Change detected (35.32% pixels, 6458 px, frame #98)
+[12:55:17] INFO      main — Monitoring Paused
+[13:13:40] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[13:13:41] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[13:13:43] INFO      main — Starting background screen monitoring loop...
+[13:13:43] INFO      main — AI Study Assistant is initialized and listening!
+[13:14:01] DEBUG     main — Capture region updated: (100, 100, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (103, 106, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (114, 120, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (144, 152, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (157, 165, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (180, 187, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (201, 204, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (217, 219, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (231, 230, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (260, 255, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (273, 266, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (279, 271, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (288, 279, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (295, 290, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (299, 296, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (305, 303, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (309, 306, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (312, 310, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (316, 314, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (321, 319, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (328, 329, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (330, 332, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (333, 335, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (335, 337, 400, 300)
+[13:14:01] DEBUG     main — Capture region updated: (336, 338, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (337, 339, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (338, 340, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (338, 341, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (338, 342, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (339, 343, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (339, 344, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (340, 344, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (341, 345, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (341, 347, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (342, 348, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (342, 349, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (343, 349, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (343, 351, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (344, 352, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (345, 353, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (345, 354, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (345, 355, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (346, 355, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (347, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (348, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (349, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (350, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (351, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (352, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (353, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (354, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (355, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (356, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (358, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (359, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (360, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (362, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (365, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (367, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (370, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (373, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (376, 356, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (376, 357, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (379, 357, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (381, 358, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (382, 358, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (384, 358, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (385, 359, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (386, 359, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (386, 360, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (387, 361, 400, 300)
+[13:14:02] DEBUG     main — Capture region updated: (388, 361, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (389, 362, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (389, 363, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (390, 364, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (390, 365, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (392, 366, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (392, 367, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (392, 368, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (393, 369, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (394, 370, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (394, 371, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (394, 372, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (394, 373, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (394, 374, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (393, 375, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (393, 376, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (393, 377, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (393, 378, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (394, 378, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (395, 378, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (396, 378, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (396, 379, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (397, 379, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (398, 379, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (398, 380, 400, 300)
+[13:14:03] DEBUG     main — Capture region updated: (399, 380, 400, 300)
+[13:14:04] DEBUG     main — Capture region updated: (400, 380, 400, 300)
+[13:14:05] DEBUG     main — Capture region updated: (400, 380, 400, 300)
+[13:14:05] DEBUG     main — Capture region updated: (400, 380, 400, 302)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 305)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 318)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 323)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 334)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 358)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 364)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 368)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 373)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 378)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 390)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 394)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 398)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 403)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 409)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 424)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 428)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 429)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 431)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 433)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 435)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 436)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 438)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 440)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 443)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 445)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 447)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 452)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 453)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 454)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 456)
+[13:14:06] DEBUG     main — Capture region updated: (400, 380, 400, 457)
+[13:14:09] INFO      main — Monitoring Resumed
+[13:14:09] DEBUG     main — Screen is stable. Running OCR...
+[13:14:11] INFO      main — Manual scan triggered.
+[13:14:21] INFO      main — Manual scan triggered.
+[13:18:15] INFO      main — Monitoring Paused
+[13:18:29] DEBUG     main — Capture region updated: (400, 380, 400, 457)
+[13:22:48] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[13:22:49] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[13:22:51] INFO      main — Starting background screen monitoring loop...
+[13:22:51] INFO      main — AI Study Assistant is initialized and listening!
+[13:28:05] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[13:28:06] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[13:28:08] INFO      main — Starting background screen monitoring loop...
+[13:28:08] INFO      main — AI Study Assistant is initialized and listening!
+[13:29:17] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[13:29:17] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[13:29:19] INFO      main — Starting background screen monitoring loop...
+[13:29:19] INFO      main — AI Study Assistant is initialized and listening!
+[13:29:43] DEBUG     main — Capture region updated: (100, 100, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (103, 105, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (111, 116, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (135, 149, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (146, 165, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (150, 173, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (153, 179, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (166, 195, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (185, 218, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (203, 239, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (209, 246, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (222, 263, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (243, 284, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (252, 295, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (267, 310, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (278, 320, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (284, 326, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (287, 330, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (289, 330, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (289, 331, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (290, 332, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (292, 333, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (292, 334, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (293, 335, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (295, 337, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (296, 337, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (296, 338, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (297, 338, 400, 300)
+[13:29:43] DEBUG     main — Capture region updated: (298, 340, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (298, 341, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (300, 343, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (301, 345, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (303, 346, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (303, 348, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (304, 349, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (303, 348, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (304, 349, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (305, 350, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (305, 351, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (306, 351, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (307, 351, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (308, 351, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (309, 351, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (310, 351, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (311, 352, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (312, 352, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (315, 354, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (318, 356, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (322, 359, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (324, 360, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (327, 362, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (328, 362, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (330, 363, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (331, 363, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (332, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (333, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (334, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (335, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (336, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (337, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (338, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (339, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (340, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (341, 364, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (342, 363, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (343, 363, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (344, 363, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (344, 362, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (345, 362, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (346, 362, 400, 300)
+[13:29:44] DEBUG     main — Capture region updated: (347, 362, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (348, 362, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (349, 362, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (350, 362, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (351, 363, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (352, 363, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (353, 364, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (355, 365, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (356, 366, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (359, 367, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (363, 368, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (364, 368, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (366, 369, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (366, 370, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (368, 370, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (368, 371, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (369, 371, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (369, 372, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (369, 373, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (369, 374, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (369, 375, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (370, 376, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (370, 377, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (371, 378, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (371, 379, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (371, 380, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (371, 381, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (372, 382, 400, 300)
+[13:29:45] DEBUG     main — Capture region updated: (372, 383, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (373, 384, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (373, 385, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (373, 386, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (373, 387, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (373, 388, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (373, 389, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (374, 390, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (375, 391, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (376, 391, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (376, 392, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (377, 392, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (378, 392, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (379, 392, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (380, 392, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (381, 392, 400, 300)
+[13:29:46] DEBUG     main — Capture region updated: (383, 392, 400, 300)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 300)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 302)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 317)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 344)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 351)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 360)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 368)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 382)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 392)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 408)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 413)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 432)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 438)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 441)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 444)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 445)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 445)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 446)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 447)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 448)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 449)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 454)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 457)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 458)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 459)
+[13:29:49] DEBUG     main — Capture region updated: (383, 392, 400, 459)
+[13:29:53] INFO      main — Monitoring Resumed
+[13:29:53] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:29:53] DEBUG     main — Screen is stable. Running OCR...
+[13:29:55] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:29:55] DEBUG     main — Screen is stable. Running OCR...
+[13:29:56] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:29:56] DEBUG     main — Screen is stable. Running OCR...
+[13:29:58] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:29:58] DEBUG     main — Screen is stable. Running OCR...
+[13:29:59] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:29:59] INFO      main — Manual scan triggered.
+[13:29:59] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:29:59] DEBUG     main — Screen is stable. Running OCR...
+[13:29:59] INFO      main — Capture successful. Saved to debug.png
+[13:30:01] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:01] DEBUG     main — Screen is stable. Running OCR...
+[13:30:02] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:02] DEBUG     main — Screen is stable. Running OCR...
+[13:30:04] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:04] DEBUG     main — Screen is stable. Running OCR...
+[13:30:05] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:05] DEBUG     main — Screen is stable. Running OCR...
+[13:30:07] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:07] DEBUG     main — Screen is stable. Running OCR...
+[13:30:09] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:09] DEBUG     main — Screen is stable. Running OCR...
+[13:30:10] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:10] DEBUG     main — Screen is stable. Running OCR...
+[13:30:11] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:11] DEBUG     main — Screen is stable. Running OCR...
+[13:30:13] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:13] DEBUG     main — Screen is stable. Running OCR...
+[13:30:14] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:14] DEBUG     main — Screen is stable. Running OCR...
+[13:30:16] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:16] DEBUG     main — Screen is stable. Running OCR...
+[13:30:18] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:18] DEBUG     main — Screen is stable. Running OCR...
+[13:30:19] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:19] DEBUG     main — Screen is stable. Running OCR...
+[13:30:21] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:21] DEBUG     main — Screen is stable. Running OCR...
+[13:30:22] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:22] DEBUG     main — Screen is stable. Running OCR...
+[13:30:23] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:24] DEBUG     main — Screen is stable. Running OCR...
+[13:30:25] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:25] DEBUG     main — Screen is stable. Running OCR...
+[13:30:27] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:27] DEBUG     main — Screen is stable. Running OCR...
+[13:30:28] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:28] DEBUG     main — Screen is stable. Running OCR...
+[13:30:30] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:30] DEBUG     main — Screen is stable. Running OCR...
+[13:30:31] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:31] DEBUG     main — Screen is stable. Running OCR...
+[13:30:33] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:33] DEBUG     main — Screen is stable. Running OCR...
+[13:30:34] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:34] DEBUG     main — Screen is stable. Running OCR...
+[13:30:36] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:36] DEBUG     main — Screen is stable. Running OCR...
+[13:30:37] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:37] DEBUG     main — Screen is stable. Running OCR...
+[13:30:39] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:39] DEBUG     main — Screen is stable. Running OCR...
+[13:30:40] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:40] DEBUG     main — Screen is stable. Running OCR...
+[13:30:42] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:42] DEBUG     main — Screen is stable. Running OCR...
+[13:30:43] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:43] DEBUG     main — Screen is stable. Running OCR...
+[13:30:45] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:45] DEBUG     main — Screen is stable. Running OCR...
+[13:30:46] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:46] DEBUG     main — Screen is stable. Running OCR...
+[13:30:48] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:48] DEBUG     main — Screen is stable. Running OCR...
+[13:30:49] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:49] DEBUG     main — Screen is stable. Running OCR...
+[13:30:51] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:51] DEBUG     main — Screen is stable. Running OCR...
+[13:30:52] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:52] DEBUG     main — Screen is stable. Running OCR...
+[13:30:54] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:54] DEBUG     main — Screen is stable. Running OCR...
+[13:30:55] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:55] DEBUG     main — Screen is stable. Running OCR...
+[13:30:57] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:57] DEBUG     main — Screen is stable. Running OCR...
+[13:30:58] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:30:58] DEBUG     main — Screen is stable. Running OCR...
+[13:31:00] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:00] DEBUG     change_detector — Change detected (91.37% pixels, 10416 px, frame #45)
+[13:31:00] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:00] DEBUG     main — Screen is stable. Running OCR...
+[13:31:02] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:02] DEBUG     change_detector — Change detected (10.34% pixels, 1179 px, frame #47)
+[13:31:03] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:03] DEBUG     main — Screen is stable. Running OCR...
+[13:31:04] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:04] DEBUG     change_detector — Change detected (100.00% pixels, 11400 px, frame #49)
+[13:31:05] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:05] DEBUG     main — Screen is stable. Running OCR...
+[13:31:06] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:07] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:08] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:09] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:10] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:10] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:11] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:12] DEBUG     main — Capturing region: {'left': 383, 'top': 392, 'width': 400, 'height': 459}
+[13:31:12] INFO      main — Monitoring Paused
+[13:33:51] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[13:33:52] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[13:33:54] INFO      main — Starting background screen monitoring loop...
+[13:33:54] INFO      main — AI Study Assistant is initialized and listening!
+[13:36:50] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[13:36:50] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[13:36:52] INFO      main — Starting background screen monitoring loop...
+[13:36:52] INFO      main — AI Study Assistant is initialized and listening!
+[13:37:13] DEBUG     main — Capture region updated: (100, 100, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (101, 103, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (107, 109, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (122, 124, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (135, 140, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (151, 155, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (160, 164, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (172, 176, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (180, 183, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (194, 197, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (209, 211, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (213, 215, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (218, 220, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (233, 236, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (241, 244, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (248, 253, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (257, 260, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (262, 264, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (268, 271, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (272, 275, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (274, 277, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (276, 280, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (277, 280, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (280, 285, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (281, 287, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (282, 288, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (283, 289, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (285, 293, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (287, 295, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (290, 298, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (291, 300, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (294, 305, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (296, 309, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (297, 311, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (299, 314, 400, 300)
+[13:37:13] DEBUG     main — Capture region updated: (301, 319, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (303, 320, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (305, 324, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (305, 325, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (305, 326, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (306, 328, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (306, 329, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (306, 330, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (307, 331, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (308, 332, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (308, 333, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (308, 334, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (308, 335, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (308, 336, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (309, 337, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (309, 338, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (310, 338, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (310, 339, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (311, 339, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (312, 340, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (313, 340, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (313, 341, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (314, 341, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (316, 341, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (316, 342, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (317, 343, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (319, 344, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (320, 344, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (321, 345, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (323, 345, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (327, 347, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (333, 351, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (336, 352, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (338, 353, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (346, 357, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (347, 358, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (348, 359, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (349, 359, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (350, 360, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (352, 360, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (352, 361, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (353, 361, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (353, 362, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (354, 362, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (354, 363, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (354, 364, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (354, 365, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (355, 366, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (355, 367, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (356, 367, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (357, 368, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (358, 369, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (359, 371, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (360, 371, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (361, 371, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (362, 372, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (363, 373, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (363, 374, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (364, 374, 400, 300)
+[13:37:14] DEBUG     main — Capture region updated: (365, 375, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (367, 376, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (368, 377, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (370, 378, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (371, 378, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (372, 378, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (373, 379, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (374, 380, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (375, 380, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (376, 381, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (377, 381, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (378, 381, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (379, 381, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (380, 381, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (380, 382, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (380, 383, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (380, 384, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (381, 384, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (381, 385, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (382, 385, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (383, 386, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (384, 387, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (384, 388, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (386, 389, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (387, 389, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (388, 390, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (390, 392, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (391, 392, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (392, 392, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (392, 393, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (393, 394, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (393, 395, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (393, 396, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (394, 396, 400, 300)
+[13:37:15] DEBUG     main — Capture region updated: (394, 395, 400, 300)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 300)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 302)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 311)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 322)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 344)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 357)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 359)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 367)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 371)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 373)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 375)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 377)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 378)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 380)
+[13:37:17] DEBUG     main — Capture region updated: (394, 395, 400, 381)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 387)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 390)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 395)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 400)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 400)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 403)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 412)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 415)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 416)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 417)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 419)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 421)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 422)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 424)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 426)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 428)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 431)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 433)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 434)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 437)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 439)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 440)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 441)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 442)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 443)
+[13:37:18] DEBUG     main — Capture region updated: (394, 395, 400, 443)
+[13:37:21] INFO      main — Monitoring Resumed
+[13:37:22] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:22] DEBUG     main — Screen is stable. Running OCR...
+[13:37:23] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:23] DEBUG     main — Screen is stable. Running OCR...
+[13:37:24] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:25] DEBUG     main — Screen is stable. Running OCR...
+[13:37:26] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:26] DEBUG     main — Screen is stable. Running OCR...
+[13:37:27] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:27] DEBUG     main — Screen is stable. Running OCR...
+[13:37:28] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:28] DEBUG     main — Screen is stable. Running OCR...
+[13:37:30] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:30] DEBUG     main — Screen is stable. Running OCR...
+[13:37:31] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:31] DEBUG     main — Screen is stable. Running OCR...
+[13:37:32] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:32] DEBUG     main — Screen is stable. Running OCR...
+[13:37:34] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:34] DEBUG     main — Screen is stable. Running OCR...
+[13:37:35] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:35] DEBUG     main — Screen is stable. Running OCR...
+[13:37:36] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:36] DEBUG     change_detector — Change detected (90.68% pixels, 9975 px, frame #12)
+[13:37:37] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:37] DEBUG     main — Screen is stable. Running OCR...
+[13:37:38] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:39] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:40] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:40] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:41] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:42] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:43] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:43] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:44] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:44] DEBUG     change_detector — Change detected (90.68% pixels, 9975 px, frame #22)
+[13:37:45] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:45] DEBUG     main — Screen is stable. Running OCR...
+[13:37:46] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:47] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:48] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:49] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:50] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:50] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:51] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:52] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:53] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:53] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:54] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:55] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:56] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:57] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:57] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:57] DEBUG     change_detector — Change detected (90.68% pixels, 9975 px, frame #38)
+[13:37:58] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:37:58] DEBUG     main — Screen is stable. Running OCR...
+[13:37:59] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:00] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:01] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:01] DEBUG     change_detector — Change detected (58.02% pixels, 6382 px, frame #42)
+[13:38:02] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:02] DEBUG     change_detector — Change detected (29.67% pixels, 3264 px, frame #43)
+[13:38:03] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:03] DEBUG     main — Screen is stable. Running OCR...
+[13:38:04] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:05] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:05] DEBUG     change_detector — Change detected (63.38% pixels, 6972 px, frame #46)
+[13:38:06] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:06] DEBUG     main — Screen is stable. Running OCR...
+[13:38:07] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:08] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:08] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:09] INFO      main — Manual scan triggered.
+[13:38:09] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:09] INFO      main — Capture successful. Saved to debug.png
+[13:38:09] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:09] INFO      main — Manual scan triggered.
+[13:38:09] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:09] INFO      main — Capture successful. Saved to debug.png
+[13:38:10] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:11] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:12] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:12] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:13] INFO      main — Manual scan triggered.
+[13:38:13] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:13] INFO      main — Capture successful. Saved to debug.png
+[13:38:13] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:14] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:15] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:15] INFO      main — Manual scan triggered.
+[13:38:15] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:15] INFO      main — Capture successful. Saved to debug.png
+[13:38:15] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:16] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:17] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:18] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:19] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:19] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:20] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:21] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:22] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:23] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:23] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:24] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:25] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:26] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:26] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:27] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:28] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 400, 'height': 443}
+[13:38:29] INFO      main — Monitoring Paused
+[13:38:57] DEBUG     main — Capture region updated: (394, 395, 400, 443)
+[13:38:58] DEBUG     main — Capture region updated: (394, 395, 400, 443)
+[13:38:58] DEBUG     main — Capture region updated: (394, 395, 407, 443)
+[13:38:58] DEBUG     main — Capture region updated: (394, 395, 438, 443)
+[13:38:58] DEBUG     main — Capture region updated: (394, 395, 467, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 473, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 476, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 485, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 486, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 487, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 490, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 491, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 492, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 493, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 494, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 495, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 495, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 495, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 495, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 496, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 497, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 497, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 498, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 499, 443)
+[13:38:59] DEBUG     main — Capture region updated: (394, 395, 500, 443)
+[13:39:08] DEBUG     main — Capture region updated: (394, 395, 500, 443)
+[13:39:08] DEBUG     main — Capture region updated: (394, 395, 500, 445)
+[13:39:08] DEBUG     main — Capture region updated: (394, 395, 500, 448)
+[13:39:08] DEBUG     main — Capture region updated: (394, 395, 500, 462)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 472)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 481)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 484)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 486)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 487)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 489)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 490)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 491)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 492)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 493)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 494)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 495)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 496)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 497)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 498)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 499)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 500)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 502)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 504)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 506)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 507)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 509)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 512)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 513)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 516)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 517)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 518)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 520)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 521)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 522)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 523)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 524)
+[13:39:09] DEBUG     main — Capture region updated: (394, 395, 500, 523)
+[13:39:14] INFO      main — Monitoring Resumed
+[13:39:14] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 500, 'height': 523}
+[13:39:18] INFO      main — Manual scan triggered.
+[13:39:18] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 500, 'height': 523}
+[13:39:18] INFO      main — Capture successful. Saved to debug.png
+[13:39:30] INFO      main — Manual scan triggered.
+[13:39:30] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 500, 'height': 523}
+[13:39:30] INFO      main — Capture successful. Saved to debug.png

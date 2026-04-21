@@ -1,147 +1,105 @@
-# 🎓 AI Study Assistant
+# 🎓 ScreenSense AI: Study Assistant
 
-A desktop application that watches your screen, detects multiple-choice questions in real-time using OCR, and displays the AI-generated answer in a floating overlay — all within seconds.
+A professional, high-performance desktop application that automates the process of identifying, capturing, and solving multiple-choice questions (MCQs) from your screen in real-time. Powered by Tesseract OCR and Local AI (Ollama).
+
+![Dashboard Preview](debug.png) *(Placeholder for actual dashboard screenshot)*
 
 ---
 
 ## ✨ Features
 
-- **Real-time screen monitoring** — polls a configurable region of your screen
-- **Smart change detection** — only processes frames when content actually changes
-- **Dual-engine OCR** — Tesseract (primary) + EasyOCR (fallback)
-- **MCQ-aware parser** — extracts question + options into a structured object
-- **Pluggable AI backend** — Ollama (local), OpenAI, Groq, or Mock (offline testing)
-- **Floating answer overlay** — borderless, draggable, fade-in/out, with confidence bar
-- **Q&A history** — every answer saved to `history/qa_history.json`
-- **Global hotkeys** — toggle monitoring, hide overlay, quit
+- **📺 Centralized Dashboard** — A sleek, modern Tkinter control panel to manage the entire pipeline.
+- **🔍 Live OCR Preview** — See exactly what the AI is scanning with real-time visual confirmation.
+- **🎯 Interactive Region Selection** — Draw your capture area directly on the screen with a transparent, draggable box.
+- **⚡ Real-time Monitoring** — Smart change detection ensures processing only happens when the screen content changes.
+- **🤖 Local AI Integration** — Privacy-focused answer generation using **Ollama** (Llama 3/Phi-3). Supports OpenAI & Groq fallbacks.
+- **🪄 Floating Overlay** — A borderless, non-intrusive window that displays answers directly over your study material.
+- **📜 Live System Logs** — Real-time event tracking (Ollama status, OCR accuracy, AI response times) visible in the dashboard.
+- **⌨️ Global Hotkeys** — Control the app from anywhere without switching windows.
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 StudyAssistant/
-├── main.py            # Entry point — wires everything together
-├── capture.py         # Screen grabber (mss + pyautogui fallback)
-├── change_detector.py # Frame-diff based change detection
-├── ocr.py             # Text extraction (Tesseract + EasyOCR)
-├── parser.py          # MCQ text → structured MCQuestion object
-├── answer_engine.py   # AI backend plugins (Ollama/OpenAI/Groq/Mock)
-├── overlay.py         # Floating Tkinter answer window
-├── config.py          # ← ALL settings live here
-├── utils.py           # Shared helpers (logger, text, history)
-├── requirements.txt   # pip dependencies
-├── logs/              # Auto-created at runtime
-└── history/           # Auto-created at runtime
+├── main.py            # Main entry point & Orchestrator
+├── dashboard.py       # Modern Tkinter Control Panel UI
+├── capture_box.py     # Interactive "Draw-to-Select" Region Tool
+├── overlay.py         # Floating, semi-transparent answer window
+├── ocr.py             # Image preprocessing + Tesseract/EasyOCR logic
+├── answer_engine.py   # AI Backend (Ollama, OpenAI, Groq, Mock)
+├── change_detector.py # Pixel-diff based optimization
+├── config.py          # Central configuration & constants
+├── requirements.txt   # Python dependencies
+└── history/           # Persistent Q&A history (JSON)
 ```
 
 ---
 
 ## 🚀 Quick Start
 
-### 1. Install Python dependencies
+### 1. Requirements
+- **Python 3.10+**
+- **Tesseract OCR**: [Download & Install](https://github.com/UB-Mannheim/tesseract/wiki)
+- **Ollama**: [Download & Install](https://ollama.com/) (For local AI)
 
+### 2. Installation
 ```bash
+# Clone the repository
+git clone https://github.com/Vipul23Deshmukh/ScreenSense-AI.git
+cd ScreenSense-AI/StudyAssistant
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Install Tesseract OCR (Windows)
+### 3. Configuration
+Open `config.py` to customize the behavior:
+- Set `TESSERACT_CMD` to your Tesseract path (default: `C:\Program Files\Tesseract-OCR\tesseract.exe`).
+- Choose your `AI_PLUGIN` (`"ollama"`, `"openai"`, `"groq"`, or `"mock"`).
+- Customize `HOTKEYS` and `OVERLAY_DURATION`.
 
-Download and install from:  
-👉 https://github.com/UB-Mannheim/tesseract/wiki
-
-Default install path expected: `C:\Program Files\Tesseract-OCR\tesseract.exe`  
-Change `TESSERACT_CMD` in `config.py` if you installed elsewhere.
-
-### 3. Set up your AI backend
-
-**Option A — Ollama (local, free, recommended)**
-```bash
-# Install Ollama: https://ollama.com
-ollama run llama3
-```
-In `config.py`: `AI_PLUGIN = "ollama"` _(already the default)_
-
-**Option B — OpenAI**
-```bash
-set OPENAI_API_KEY=sk-...
-```
-In `config.py`: `AI_PLUGIN = "openai"`
-
-**Option C — Groq**
-```bash
-set GROQ_API_KEY=gsk_...
-```
-In `config.py`: `AI_PLUGIN = "groq"`
-
-**Option D — Mock (offline testing, no AI needed)**  
-In `config.py`: `AI_PLUGIN = "mock"`
-
-### 4. Configure your capture region
-
-Open `config.py` and set:
-```python
-CAPTURE_REGION = (left, top, width, height)
-# Example: (0, 0, 1280, 720)  — top-left quarter of a 2560×1440 screen
-# Set to None for full primary monitor
-```
-
-> **Tip:** Run `find_region.py` to interactively draw your capture region.
-
-### 5. Run
-
+### 4. Run
 ```bash
 python main.py
 ```
 
 ---
 
-## ⌨️ Hotkeys
+## ⌨️ Global Hotkeys
 
 | Hotkey | Action |
 |--------|--------|
-| `Ctrl+Alt+S` | Toggle monitoring on / off |
-| `Ctrl+Alt+H` | Hide / show overlay |
-| `Ctrl+Q` | Quit |
-
-All hotkeys are configurable in `config.py`.
-
----
-
-## ⚙️ Configuration (`config.py`)
-
-| Setting | Default | Description |
-|---------|---------|-------------|
-| `CAPTURE_REGION` | `None` | Screen region `(left, top, w, h)` or `None` for full screen |
-| `POLL_INTERVAL` | `0.75` | Seconds between screen grabs |
-| `ANSWER_COOLDOWN` | `4.0` | Minimum seconds between AI calls |
-| `CHANGE_THRESHOLD` | `0.04` | Pixel-fraction that must differ to trigger |
-| `AI_PLUGIN` | `"ollama"` | `"ollama"` / `"openai"` / `"groq"` / `"mock"` |
-| `OLLAMA_MODEL` | `"llama3"` | Local model name |
-| `OVERLAY_DURATION_MS` | `8000` | How long the overlay stays visible |
-| `OVERLAY_POSITION` | `(30, 30)` | Initial overlay position (x, y) |
+| `Ctrl + Alt + S` | **Toggle Monitoring** (Start/Stop scanning) |
+| `Ctrl + Alt + R` | **Adjust Region** (Show/Hide interactive capture box) |
+| `Ctrl + Shift + A` | **Scan Now** (Force a manual scan & solve) |
+| `Ctrl + Alt + H` | **Hide/Show Overlay** (Toggle floating window) |
+| `Ctrl + Q` | **Quit** (Safe exit) |
 
 ---
 
-## 🔌 Pipeline
+## 🛠️ How it Works
 
-```
-Screen grab (capture.py)
-    ↓  numpy frame
-Change detection (change_detector.py)
-    ↓  "yes, something changed"
-OCR extraction (ocr.py)
-    ↓  raw text string
-MCQ parsing (parser.py)
-    ↓  MCQuestion(question, options)
-AI answering (answer_engine.py)
-    ↓  {letter, option, why, confidence}
-Floating overlay (overlay.py)
-    ↓  shown on screen + saved to history
-```
+1. **Capture**: The app monitors a specific region of your screen (defined by you).
+2. **Detect**: It uses a change detector to wait until the screen becomes "stable" (no movement).
+3. **OCR**: Once stable, it captures the frame and extracts text using Tesseract.
+4. **Parse**: A specialized MCQ parser separates the Question from Option A, B, C, D.
+5. **Solve**: The parsed data is sent to the AI (Ollama/GPT-4) to determine the correct answer.
+6. **Display**: The result appears instantly on your dashboard and a floating overlay.
+
+---
+
+## 🔌 AI Backends
+
+| Backend | Speed | Privacy | Setup |
+|---------|-------|---------|-------|
+| **Ollama** | Fast | 🔒 High | `ollama run llama3` |
+| **Groq** | ⚡ Ultra | ☁️ Med | `set GROQ_API_KEY=...` |
+| **OpenAI** | Med | ☁️ Med | `set OPENAI_API_KEY=...` |
+| **Mock** | Instant | 🔒 High | No setup (for testing) |
 
 ---
 
 ## 📜 License
-
-MIT — use freely, contribute back!
+MIT License - Developed by Vipul Deshmukh. Use responsibly!
