@@ -1466,3 +1466,237 @@ No history yet.
 [13:39:30] INFO      main — Manual scan triggered.
 [13:39:30] DEBUG     main — Capturing region: {'left': 394, 'top': 395, 'width': 500, 'height': 523}
 [13:39:30] INFO      main — Capture successful. Saved to debug.png
+[16:42:21] INFO      change_detector — ChangeDetector initialised (threshold=0.04, diff_thresh=25, min_area=200)
+[16:42:21] INFO      main — Hotkeys: Toggle(ctrl+alt+s), Exit(ctrl+q), Hide(ctrl+alt+h), Region(ctrl+alt+r), Scan(ctrl+shift+a)
+[16:42:23] INFO      main — Starting background screen monitoring loop...
+[16:42:23] INFO      main — AI Study Assistant is initialized and listening!
+[16:42:27] INFO      main — Monitoring Resumed
+[16:42:27] DEBUG     main — Capturing region: {'left': 0, 'top': 0, 'width': 1, 'height': 1}
+[16:42:27] DEBUG     main — Screen is stable. Running OCR...
+[16:42:31] DEBUG     main — Capturing region: {'left': 0, 'top': 0, 'width': 1, 'height': 1}
+[16:42:31] DEBUG     main — Screen is stable. Running OCR...
+[16:42:32] DEBUG     main — Capturing region: {'left': 0, 'top': 0, 'width': 1, 'height': 1}
+[16:42:32] DEBUG     main — Screen is stable. Running OCR...
+[16:42:34] DEBUG     main — Capture region updated: (100, 100, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (119, 112, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (154, 130, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (174, 139, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (186, 144, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (208, 152, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (238, 163, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (247, 167, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (272, 180, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (287, 186, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (293, 189, 400, 300)
+[16:42:34] DEBUG     main — Capturing region: {'left': 293, 'top': 189, 'width': 400, 'height': 300}
+[16:42:34] DEBUG     main — Capture region updated: (303, 195, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (314, 199, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (332, 206, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (351, 213, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (363, 219, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (371, 224, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (384, 232, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (387, 234, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (390, 235, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (404, 244, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (415, 250, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (429, 257, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (433, 259, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (445, 265, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (447, 266, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (455, 270, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (461, 272, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (474, 277, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (492, 282, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (508, 286, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (512, 286, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (516, 287, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (521, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (526, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (529, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (532, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (536, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (537, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (540, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (542, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (545, 288, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (547, 289, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (549, 289, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (550, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (553, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (555, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (558, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (559, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (560, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (561, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (562, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (563, 290, 400, 300)
+[16:42:34] DEBUG     main — Capture region updated: (564, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (565, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (566, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (567, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (568, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (569, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (570, 290, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (571, 289, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (571, 288, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (572, 287, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (572, 286, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (572, 282, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (571, 280, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (571, 279, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (570, 277, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (569, 276, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (569, 274, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (568, 274, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (567, 272, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (566, 271, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (565, 270, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (565, 269, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (564, 268, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (562, 267, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (562, 265, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (561, 264, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (561, 263, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (560, 263, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (560, 262, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (559, 260, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (559, 259, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (559, 259, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 257, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 256, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 255, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 254, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 251, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 250, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 249, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 247, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 245, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 241, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 239, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 237, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 232, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 225, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 218, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 217, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 212, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 205, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 197, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 180, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 174, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 170, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 167, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 161, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 157, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 153, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 150, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 146, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 145, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 144, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 143, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 142, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (558, 141, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (557, 140, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (557, 139, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (557, 138, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (557, 137, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (556, 136, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (556, 135, 400, 300)
+[16:42:35] DEBUG     main — Capture region updated: (556, 134, 400, 300)
+[16:42:36] DEBUG     main — Capture region updated: (556, 133, 400, 300)
+[16:42:36] DEBUG     main — Capture region updated: (555, 133, 400, 300)
+[16:42:43] INFO      main — Monitoring Paused
+[16:42:45] INFO      main — Monitoring Resumed
+[16:42:48] INFO      main — Manual scan triggered.
+[16:42:48] DEBUG     main — Capturing region: {'left': 555, 'top': 133, 'width': 400, 'height': 300}
+[16:42:48] INFO      main — Capture successful. Saved to debug.png
+[16:43:18] INFO      main — Monitoring Paused
+[17:02:08] INFO: Hotkeys: Scan(ctrl+shift+a), Exit(ctrl+q)
+[17:02:08] INFO: Study Assistant Started.
+[17:03:27] INFO: Manual scan triggered.
+[17:03:27] ERROR: Scan failed: '_thread._local' object has no attribute 'srcdc'
+[17:04:28] INFO: Manual scan triggered.
+[17:04:28] ERROR: Scan failed: '_thread._local' object has no attribute 'srcdc'
+[17:04:28] INFO: Manual scan triggered.
+[17:04:28] ERROR: Scan failed: '_thread._local' object has no attribute 'srcdc'
+[17:21:56] ERROR: Ollama Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=15)
+[17:32:06] INFO: AI Test triggered.
+[17:39:10] INFO: Sending to AI: Q: . A person crosses a 600 m long street in 5 minutes. What is his speed in km per hour?
+(A) 3.6
+7.2
+(©) 8.4
+(PB) 10
+|
+Opts: []
+[17:39:47] INFO: Sending to AI: Q: Pare ord km/hrinetond of 1 kin, he woud have walked 90 km more. The ax 8. If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The act distance travelled by him is:
+Opts: ['A) 50 km 56 km', 'C) 70 km', 'B) 80 km |']
+[17:41:56] INFO: AI Test triggered.
+[17:43:10] INFO: Stop requested.
+[17:48:03] INFO: AI Test triggered.
+[17:48:17] INFO: Ollama Raw: {
+    "letter": "D",
+    "text": "The correct answer is 4, which is obtained by adding 2 + 2.",
+    "explanation": "This option is incorrect because it mentions 'not' a valid operation (+). The correct calculation is straightforward addition. There's no specific rule or exception for this question that would make one of these options correct.",
+    "confidence": "Low"	
+}
+[17:48:38] INFO: Sending to AI: Q: I FI III IIT
+distance in 12 hours, it must t
+a 4 | a 300 kmph
+Aic(20% @ 200 kmp
+360 kmph
+(C) 600 kmph
+me
+es (B) 720 kmph
+ithmetic Aptitude (a
+ta Interpretation
+fy If Rn RRR nan Allin At AA Le fhe
+Opts: []
+[17:48:47] INFO: Ollama Raw: {"letter": "C", "text": "600 kmph", "explanation": "Correct calculation: 20% speed increase = 360 kmph. Since distance = speed * time, 12 hours = 720 km (not 360). The correct answer is not INCORRECT or FALSE.", "confidence": "Low"}
+[17:48:48] INFO: Stop requested.
+[17:49:04] INFO: Sending to AI: Q: 3. If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual
+distance travelled by him is:
+(A) 50 km
+56 km
+(C) 70 km
+(B) 80 km
+Answer: Option (a)
+Opts: []
+[17:49:14] INFO: Ollama Raw: {"letter": "A", "text": "The person actually traveled 50 km.", "explanation": "If the person walked at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. So to find the actual distance travelled, we need to subtract 20 from 50.", "confidence": "High"}
+[17:49:41] INFO: Sending to AI: Q: REGION AGS2 5580
+Opts: ['5) Excluding stoppages, the speed of a bus is 54 kmph and including stoppages, it is 45 kmph. For how many minutes does the bus stop per hour?', 'A) 9 10', 'C) 12 (DB) 20 a']
+[17:49:56] INFO: Ollama Raw: {"letter": "B", "text": "The correct option is B)", "explanation": "To calculate the time stopped per hour, first find the difference in speeds: 54 - 45 = 9 kmph. Since this is for 1 hour, convert 9 kmph to minutes: 9 * 60 = 540 minutes. Divide by 60 to get the stop time in hours which is 9/60 or 3/20 of an hour. The bus stops for 3/20 of an hour per hour, therefore it stops for (3/20)*60 minutes a day", "confidence": "High"}
+[17:51:09] INFO: Stop requested.
+[17:51:13] INFO: Stop requested.
+[17:55:46] INFO: Sending to AI: Q: 3. The angle of elevation of a ladder leaning against a wall is 60° and the foot of the ladder is 4.6 m
+away from the wall. The length of the ladder is:
+(A) 2.3m
+4.6m
+(©) 7.8m
+(B) 9.2m
+fl
+Opts: []
+[17:56:18] INFO: Ollama Raw: {
+    "letter": "A", "text": "The angle of elevation of a ladder leaning against a wall is exactly 60°.", "explanation": "This statement is True because the given angle and distance make it a right triangle with hypotenuse (ladder) length as unknown. Using trigonometry, we can find that if the foot of the ladder is 4.6m away from the wall, then it forms a right-angled triangle with adjacent side 4.6 m. So, using cosine rule or sine formula: c² = a² + b² - 2ab * cos(C), where c is length of ladder, a and b are distances, and C is angle. Substituting the given values: c² = (4.6)² + (4.6)² - 2*4.6*(4.6)*cos(60°). After calculation: c ≈ 7.8m",
+    "explanation": "The calculations show that the exact option value is approximately 7.8 m, making it the correct answer.",
+    "confidence": "High" 
+}
+[17:56:30] INFO: Sending to AI: Q: A. An observer 1.6 m tall is 20%3 away from a tower. The angle of elevation from his eye to the top of
+the tower is 30°. The height of the tower is:
+(A) 21.6 m
+23.2 m
+(C) 24.72 m
+() None of these
+ol
+Opts: []
+[17:56:46] INFO: Ollama Raw: {
+    "letter": "C", 
+    "text": "The correct answer can be found using trigonometry.\nGiven: \nHeight (h) = 20% of tower height, \nDistance from observer to tower (d) = 1.6 m,\nAngle of elevation (θ) = 30°\nWe know that tan(θ) = h/d\nSubstituting values:\ntan(30°) = 20%h/1.6m\nSolving for h: \nh = 21.6 m.\nSo the correct answer is A."
+}
+[17:57:16] INFO: Sending to AI: Q: 6. The angle of elevation of the sun, when the length of the shadow of a tree ¥3 times the height of the tree, is:
+Opts: ['A) 30° 45°', 'C) 60°', 'B) 90° (ee ee ee ee ee ee']
+[17:57:27] INFO: Ollama Raw: {
+    "letter": "C", 
+    "text": "60°", 
+    "explanation": "Given that the length of the shadow is 3 times the height, we can use trigonometric relationships to find the angle. Since it's a right triangle, we can use tan(angle) = (height) / (shadow_length). The correct ratio is 1:3, so the angle is 60°.",
+    "confidence": "High" 
+}

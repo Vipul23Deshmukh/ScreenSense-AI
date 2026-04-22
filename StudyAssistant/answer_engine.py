@@ -1,168 +1,65 @@
-import logging
-import random
-from typing import List
-
-# Safely import OpenAI so the app doesn't crash if it's not installed
-try:
-    from openai import OpenAI
-except ImportError:
-    OpenAI = None
-
 import requests
 import json
+import random
+import config
 
-from config import AI_PLUGIN, OPENAI_API_KEY, OPENAI_MODEL, AI_TIMEOUT, OLLAMA_BASE_URL, OLLAMA_MODEL
+logger = config.setup_logger("answer_engine")
 
-logger = logging.getLogger(__name__)
+SYSTEM_PROMPT = """You are an expert study assistant. Analyze the MCQ carefully.
+Rules:
+- Read question carefully.
+- Identify tricky words like: NOT, EXCEPT, FALSE, INCORRECT.
+- Use elimination method.
+- If confidence is low, set confidence to "Low".
+Return ONLY JSON:
+{"letter": "A/B/C/D", "text": "exact option text", "explanation": "short explanation", "confidence": "High/Low"}"""
 
-# Enhanced prompt for structured response
-SYSTEM_PROMPT = """You are an expert exam solver. 
-You will be provided with a multiple-choice question and its options.
-Your task is to determine the correct answer and provide a brief explanation.
+def check_connection() -> bool:
+    """Check if the AI service is reachable."""
+    if config.AI_PLUGIN == "ollama":
+        try:
+            resp = requests.get(f"{config.OLLAMA_BASE_URL}/api/tags", timeout=2)
+            return resp.status_code == 200
+        except:
+            return False
+    return True # Mock is always connected
 
-RESPONSE FORMAT:
-You MUST return a JSON object with the following fields:
-1. "letter": The exact letter of the correct option (e.g., "A").
-2. "text": The full text of the correct option.
-3. "explanation": A one-sentence explanation of why this answer is correct.
+def get_answer(question: str, options: list) -> dict:
+    """Main entry point for answer generation."""
+    if config.AI_PLUGIN == "ollama":
+        return solve_with_ollama(question, options)
+    return solve_with_mock(question, options)
 
-Example Response:
-{
-  "letter": "B",
-  "text": "Paris",
-  "explanation": "Paris is the capital of France and its most populous city."
-}
-
-Do NOT provide any text outside of the JSON block.
-"""
-
-def extract_labels(options: List[str]) -> List[str]:
-    """Helper to extract option labels (A, B, 1, 2) from option strings."""
-    labels = []
-    for opt in options:
-        # If format is "A) Option text", split by ')'
-        if ')' in opt:
-            label = opt.split(')')[0].strip()
-        # If format is "A. Option text", split by '.'
-        elif '.' in opt:
-            label = opt.split('.')[0].strip()
-        # Fallback to the very first character
-        else:
-            label = opt[0]
+def solve_with_ollama(question: str, options: list) -> dict:
+    url = f"{config.OLLAMA_BASE_URL}/api/generate"
+    prompt = f"{SYSTEM_PROMPT}\n\nQuestion: {question}\nOptions:\n" + "\n".join(options)
+    
+    try:
+        resp = requests.post(url, json={
+            "model": config.OLLAMA_MODEL,
+            "prompt": prompt,
+            "stream": False,
+            "format": "json"
+        }, timeout=config.AI_TIMEOUT)
+        data = resp.json()
+        raw_res = data.get("response", "{}")
+        logger.info(f"Ollama Raw: {raw_res}")
+        
+        res = json.loads(raw_res)
+        # Add "Low confidence" warning to explanation if flagged
+        if res.get("confidence") == "Low":
+            res["explanation"] = "⚠️ [Low Confidence] " + res.get("explanation", "")
             
-        labels.append(label.upper())
-    return labels
-
-def solve_with_ollama(question: str, options: List[str]) -> dict:
-    """Solves the MCQ using a local Ollama instance."""
-    url = f"{OLLAMA_BASE_URL}/api/generate"
-    
-    options_text = "\n".join(options)
-    prompt = f"{SYSTEM_PROMPT}\n\nQuestion:\n{question}\n\nOptions:\n{options_text}\n\nJSON Response:"
-    
-    payload = {
-        "model": OLLAMA_MODEL,
-        "prompt": prompt,
-        "stream": False,
-        "format": "json" # Ollama supports forced JSON format
-    }
-    
-    try:
-        response = requests.post(url, json=payload, timeout=AI_TIMEOUT)
-        response.raise_for_status()
-        data = response.json()
-        
-        raw_resp_text = data.get("response", "{}")
-        # Parse the JSON string from response
-        result = json.loads(raw_resp_text)
-        result["raw_response"] = raw_resp_text
-        return result
+        return res
     except Exception as e:
-        logger.error(f"Ollama API error: {e}")
-        return {"error": str(e), "raw_response": "No response"}
+        logger.error(f"Ollama Error: {e}")
+        return {"error": str(e)}
 
-def check_ollama_status() -> bool:
-    """Verifies if the Ollama server is reachable."""
-    try:
-        response = requests.get(f"{OLLAMA_BASE_URL}/api/tags", timeout=2)
-        return response.status_code == 200
-    except:
-        return False
-
-def solve_with_openai(question: str, options: List[str]) -> dict:
-    """Solves the MCQ using OpenAI's API."""
-    if not OpenAI:
-        logger.error("OpenAI package not installed. Falling back to mock.")
-        return solve_with_mock(question, options)
-        
-    if OPENAI_API_KEY == "YOUR_OPENAI_API_KEY_HERE" or not OPENAI_API_KEY:
-        logger.error("OpenAI API Key not configured. Falling back to mock.")
-        return solve_with_mock(question, options)
-
-    client = OpenAI(api_key=OPENAI_API_KEY, timeout=AI_TIMEOUT)
-    
-    options_text = "\n".join(options)
-    user_prompt = f"Question:\n{question}\n\nOptions:\n{options_text}"
-    
-    try:
-        response = client.chat.completions.create(
-            model=OPENAI_MODEL,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.0,
-            response_format={"type": "json_object"}
-        )
-        
-        result = json.loads(response.choices[0].message.content.strip())
-        return result
-        
-    except Exception as e:
-        logger.error(f"OpenAI API error: {e}. Falling back to mock.")
-        return solve_with_mock(question, options)
-
-def solve_with_mock(question: str, options: List[str]) -> dict:
-    """Mock solver for offline mode or fallback. Returns a structured dummy response."""
-    logger.info("Using MOCK answer engine.")
-    if not options:
-        return {"letter": "A", "text": "Mock Option", "explanation": "This is a mock answer."}
-    
-    labels = extract_labels(options)
-    letter = random.choice(labels)
-    # Find the option text that matches the letter
-    text = "Unknown Option"
-    for opt in options:
-        if opt.startswith(letter):
-            text = opt.split(')', 1)[-1].strip() if ')' in opt else opt
-            break
-            
+def solve_with_mock(question: str, options: list) -> dict:
+    logger.info("Using Mock AI")
+    letter = random.choice(["A", "B", "C", "D"])
     return {
         "letter": letter,
-        "text": text,
-        "explanation": "This is a simulated explanation for testing purposes."
+        "text": f"Mock Option {letter}",
+        "explanation": "This is a mock answer for testing."
     }
-
-from functools import lru_cache
-
-@lru_cache(maxsize=100)
-def _cached_get_answer(question: str, options_tuple: tuple) -> dict:
-    """Cached inner function for get_answer."""
-    options = list(options_tuple)
-    plugin = AI_PLUGIN.lower()
-    
-    if plugin == "openai":
-        return solve_with_openai(question, options)
-    elif plugin == "ollama":
-        return solve_with_ollama(question, options)
-    else:
-        if plugin != "mock":
-            logger.warning(f"Plugin '{plugin}' not implemented in answer_engine yet. Using mock fallback.")
-        return solve_with_mock(question, options)
-
-def get_answer(question: str, options: List[str]) -> dict:
-    """
-    Main entry point for the answer engine.
-    Returns a dict: {"letter": "A", "text": "...", "explanation": "..."}
-    """
-    return _cached_get_answer(question, tuple(options))

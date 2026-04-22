@@ -1,31 +1,19 @@
-# ─────────────────────────────────────────────────────────
-# requirements.txt — AI Study Assistant
+# StudyAssistant AI - Dependencies
 # Install with: pip install -r requirements.txt
-# ─────────────────────────────────────────────────────────
 
-# ── Screen capture ────────────────────────────────────────
-mss>=9.0.1                  # fast cross-platform screen capture (primary)
-pyautogui>=0.9.54           # screenshot fallback + mouse/keyboard control
+# Screen capture
+mss>=9.0.1
 
-# ── Image processing ──────────────────────────────────────
-Pillow>=10.0.0              # PIL image manipulation
-opencv-python>=4.9.0        # image preprocessing for OCR
-numpy>=1.26.0               # array math used throughout
+# Image processing
+opencv-python>=4.9.0
+numpy>=1.26.0
+Pillow>=10.0.0
 
-# ── OCR ───────────────────────────────────────────────────
-pytesseract>=0.3.10         # Python wrapper for Tesseract-OCR
-easyocr>=1.7.1              # fallback OCR engine (GPU-optional)
+# OCR
+pytesseract>=0.3.10
 
-# ── AI backends ───────────────────────────────────────────
-requests>=2.31.0            # Ollama HTTP API
-openai>=1.30.0              # OpenAI GPT-4o / GPT-4o-mini
-groq>=0.9.0                 # Groq ultra-fast inference
+# AI communication
+requests>=2.31.0
 
-# ── Hotkeys ───────────────────────────────────────────────
-keyboard>=0.13.5            # global hotkey support (Windows/Linux)
-
-# ── GUI (overlay) ─────────────────────────────────────────
-# tkinter is part of the Python standard library — no pip install needed
-
-# ── Dev / testing (optional) ──────────────────────────────
-pytest>=8.0.0
+# Hotkeys
+keyboard>=0.13.5
